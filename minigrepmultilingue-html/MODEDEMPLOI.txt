@@ -1,0 +1,17 @@
+
+perl mini-grep-multilingue.pl "codagedes2fichiers" FichierEnEntree FichierContenantLeMotif
+
+par exemple :
+
+perl mini-grep-multilingue.pl "UTF-8" RU_Convention_UTF8.txt motif.txt
+(avec affichage du contexte : 1 ligne avant et aprÅËs)
+
+perl -c mini-grep-multilingue.pl "UTF-8" RU_Convention_UTF8.txt motif.txt
+(sans contexte : seule la ligne contenant le motif est affichÅÈe)
+
+(cf fichiers fournis)
+
+
+En sortie : resultat-extraction.html (sortie en UTF8)
+
+ "

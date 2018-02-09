@@ -1,0 +1,1102 @@
+<html dir="rtl">
+<head>
+<meta http-equiv="Content-Type"
+	content="text/html; charset=UTF-8">
+<title>موقع  الرقة - تجارة الصوف.. وسوقها المميزة</title>
+<meta name="Keywords"
+	content="تجارة الصوف.. وسوقها المميزة,فايز عطورة؛ الرقة؛ جز؛ لحاف؛ الزو؛">
+<meta name="Description"
+	content="تعتبر &quot;الرقة&quot; واحدة من أهم المحافظات السورية، في إنتاج الصوف الطبيعي الخام، والذي هو أحد أهم منتجات الثروة الحيوانية، ورغم المنافسة الشديدة التي يلقاها الصوف من الألياف الصناعية، وخاصة في السنوات الأخيرة، إلا أنه مازال محتفظاً بمكانته بين بقية الألياف الهامة في الصناعة، لأهمية خواصه الطبيعية، فهو يمتاز بالمتانة والمرونة وقوة الاحتمال، وهو عازل جيد للحرارة، ويلي القطن في أهميته بين الألياف الطبيعية.">
+<script type="text/javascript">
+		var timeout	= 500;
+	var closetimer	= 0;
+	var ddmenuitem	= 0;
+
+	function mopen(id)
+	{	
+		// cancel close timer
+		mcancelclosetime();
+	
+		// close old layer
+		if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+	
+		// get new layer and show it
+		ddmenuitem = document.getElementById(id);
+		ddmenuitem.style.visibility = 'visible';
+	
+	}
+	// close showed layer
+	function mclose()
+	{
+		if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+	}
+	
+	// go close timer
+	function mclosetime()
+	{
+		closetimer = window.setTimeout(mclose, timeout);	
+	}
+	
+	// cancel close timer
+	function mcancelclosetime()
+	{
+		if(closetimer)
+		{
+			window.clearTimeout(closetimer);
+			closetimer = null;
+		}
+	}
+
+// close layer when click-out
+document.onclick = mclose;
+
+	
+		var current_theme_color = "#5A5152";
+		
+		function changeThemeColor (newColor, themeName)
+		{
+			var themeIcons = document.getElementsByName ("theme_icon");
+			for (var index = 0; index < themeIcons.length; index ++)
+			{
+				if (themeIcons[index].src.indexOf (themeName) != -1)
+					themeIcons[index].src = "http://esyria.sy/sites/design/theme_" + themeName + "_selected.jpg";
+				else
+					themeIcons[index].src = themeIcons[index].src.replace ("_selected", "");
+			}
+			var elements = new Array ("td", "span");
+			for (var j = 0; j < elements.length; j++)
+			{
+				var themeBasedElements = document.getElementsByTagName (elements [j]);
+			
+				for (var i = 0; i < themeBasedElements.length; i++)
+				{
+					if (themeBasedElements[i].className == "header_bar" || themeBasedElements[i].className == "block_service")
+					{
+						themeBasedElements [i].style.backgroundColor = newColor;
+					}
+				} //for
+			}
+			var searchButton = document.getElementById ("search_button");
+			searchButton.src = "http://esyria.sy/sites/design/search_" + themeName + ".jpg";
+			
+			var fontIcons = document.getElementsByName ("font_icons");
+			for (var index = 0; index < font_icons.length; index ++)
+			{
+				fontIcons[index].src = "http://esyria.sy/sites/design/" + fontIcons[index].id + "_" + themeName + ".jpg";
+			}
+			current_theme_color = newColor;
+			/*var sana_iframe = document.getElementsByName ("sana");
+			sana_iframe = sana_iframe [0];
+			sana_iframe.contentWindow.document.bgColor = newColor;*/
+			
+			setCookie ("theme", themeName, 365);			
+		} //changeThemeColor
+		
+		function setCookie(c_name,value,expiredays)
+		{
+			var exdate = new Date();
+			exdate.setDate(exdate.getDate()+expiredays);
+			document.cookie=c_name+ "=" +escape(value)+
+			((expiredays==null) ? "" : ";expires=" + exdate.toGMTString());
+		}
+	
+		function changeFont (newFont, fontName)
+		{
+			var spans = document.getElementsByTagName ("span");
+			
+			for (var index = 0; index < spans.length; index ++)
+			{
+				if (spans [index].className.indexOf ("small_font") != -1)
+				{
+					spans [index].style.fontSize = newFont + "px";
+				}
+				else
+					if (spans [index].className.indexOf ("large_font") != -1)
+					{
+						spans [index].style.fontSize = (parseInt(newFont) + 1) + "px";
+					}
+			}
+			
+			var ps = document.getElementsByTagName ("p");
+			
+			for (var index = 0; index < ps.length; index ++)
+			{
+				if (ps [index].className.indexOf ("small_font") != -1)
+				{
+					ps [index].style.fontSize = newFont + "px";
+				}
+				else
+					if (ps [index].className.indexOf ("large_font") != -1)
+					{
+						ps [index].style.fontSize = (parseInt(newFont) + 1) + "px";
+					}
+			}
+			
+			setCookie ("font", fontName, 365);			
+		} //changeThemeColor
+	
+function trim (text) 
+{
+	return text.replace(/^\s+|\s+$/g,"");
+}
+</script>
+<LINK href='style.css' type='text/css' rel='stylesheet'>
+ <LINK href='template.css' type='text/css' rel='stylesheet'>
+ </head>
+<body topmargin="0" leftmargin="0" rightmargin="0"
+	onLoad="document.getElementById('weather_temperature').innerHTML='<br><p align=center ><img src=http://esyria.sy/sites/design/top_loader.gif></p><br>&nbsp;';PostRequest('ajax_content.php','&city=08','1','get','08');">
+<img src="http://esyria.sy/sites/design/gray_dot.gif"
+	style="display: none" />
+<table width="100%" height="100%" border="0" cellspacing="0"
+	cellpadding="0" align="center" class="main_tab">
+	<tr>
+		<td align="center"></td>
+	</tr>
+	<tr class="main_tab">
+		<td valign="top">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr height="85">
+				<td height="85" class="header_logo_bg">
+				<table width="100%" height="85" border="0" cellspacing="0"
+					cellpadding="0">
+					<tr>
+						<td align="right" width="316"><a
+							href="http://www.esyria.sy/eraqqa/"><img
+							src="http://esyria.sy/sites/design/raqqa/logo.jpg" border=0
+							alt="الرقة"></a></td>
+						<td>&nbsp;</td>
+						<td align="right" width="390"><table  width="100%" border="0" cellspacing="0" cellpadding="0" align="right" dir="rtl">
+  <tr>
+    	<td width="195"><div id="head_pic1"  style="text-align:center">
+			     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				  <td width="100" align="center"><table height="68"  width="100%" border="0" cellspacing="0" cellpadding="0" dir="ltr">
+			<tr height="22"><td colspan="3" align="center" dir=rtl><span class="header_pic"  colspan="3" ><a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=todayimg" target=_blank  class="header_pic" ><b>صورة اليوم</b></a></span></td></tr><tr>
+					<tr>
+					  <td colspan="3" align="center" dir=rtl>
+					  <span class="header_pic" >"الرقة".. وثيقة تاريخية على الأرض</span>
+					  </td>
+					</tr>
+					<tr height="12" >
+					  <td  width="50" align="right"></td>
+					  <td width="20"></td>
+					  <td width="50" ><img src="http://esyria.sy/sites/design/next_head_arrow.jpg" width="5" height="12"   alt ="التالي" style="cursor:pointer" onclick="PostRequestView('1','ajax_content.php','&name=upmenu&current=1&ranid=3127&block=1&ids=,201409260221353,201408290010173,201408271114371,201407200106172,201310220005233,201204261345011,201204251425114,201204162000042,&site=raqqa','1','get')" /></td>
+					</tr>
+				  </table></td>
+				  <td width="100" height="71"  align="center"><a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=todayimg&filename=201409260221353" target=_blank  >
+				  <img src="http://www.esyria.sy/sites/images/raqqa/151612_2014_09_26_00_33_51.thumb.jpg"  alt=""الرقة".. وثيقة تاريخية على الأرض"  border=0 class="story_thub"  width="90" height="60" /><img src="http://esyria.sy/sites/design/pic_reflection.jpg" height="11"  border=0></td>
+				</tr>
+			  </table>
+			</div></td><td width="195"><div id="head_pic2"  style="text-align:center">
+			     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				  <td width="100" align="center"><table height="68"  width="100%" border="0" cellspacing="0" cellpadding="0" dir="ltr">
+			<tr height="22"><td colspan="3" align="center" dir=rtl><span class="header_pic"  colspan="3" ><a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=face" target=_blank  class="header_pic" ><b>وجه اليوم</b></a></span></td></tr><tr>
+					<tr>
+					  <td colspan="3" align="center" dir=rtl>
+					  <span class="header_pic" >"أحد دالي": ما زلت أتعلم لغة "الباغلما"</span>
+					  </td>
+					</tr>
+					<tr height="12" >
+					  <td  width="50" align="right"></td>
+					  <td width="20"></td>
+					  <td width="50" ><img src="http://esyria.sy/sites/design/next_head_arrow.jpg" width="5" height="12"   alt ="التالي" style="cursor:pointer" onclick="PostRequestView('2','ajax_content.php','&name=upmenu&current=1&ranid=7200&block=2&ids=,201201031940156,201107301430053,201107121530011,201107120905083,201106020810043,201105111515032,201104202135022,201104080845011,&site=raqqa','2','get')" /></td>
+					</tr>
+				  </table></td>
+				  <td width="100" height="71"  align="center"><a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=face&filename=201201031940156" target=_blank  >
+				  <img src="http://www.esyria.sy/sites/images/raqqa/face/122436_2011_08_03_14_05_47.thumb.jpg"  alt=""أحد دالي": ما زلت أتعلم لغة "الباغلما""  border=0 class="story_thub"  width="90" height="60" /><img src="http://esyria.sy/sites/design/pic_reflection.jpg" height="11"  border=0></td>
+				</tr>
+			  </table>
+			</div></td>	</tr>
+</table>
+</td>
+						<td width="302">
+						<table width="100%" height="100%" border="0" cellspacing="0"
+							cellpadding="0">
+							<tr>
+								<td align="left"><object
+									classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+									codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"
+									width="196" height="84" title="Logo">
+									<param name="movie" value="http://esyria.sy/sites/design/raqqa/logo.swf">
+									<param name="quality" value="high">
+									<embed src="http://esyria.sy/sites/design/raqqa/logo.swf" quality="high"
+										pluginspage="http://www.macromedia.com/go/getflashplayer"
+										type="application/x-shockwave-flash" width="196" height="84"></embed>
+								</object>
+							
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+
+			</tr>
+			<!--  breaking news  -->
+			<tr>
+				<td></td>
+			</tr>
+			<!--  nav  -->
+			<tr>
+				<td height="31" class="header_bar" name="theme_based" style="background-color: #5A5152;">
+				<table width="100%" height="100%" border="0" cellspacing="0"
+					cellpadding="0">
+					<tr>
+						<td width="139">
+						<table width="95%" height="100%" border="0" cellspacing="0"
+							cellpadding="0" dir=rtl>
+							<tr>
+								<td align="center" width="120">
+								<div id="weather_temperature"></div>
+								<div id="head_pic4" class="menu2" style="z-index: 9999"
+									onclick="document.getElementById('head_pic4').style.visibility = 'hidden';">
+								</div>
+								</td>
+								<td align="center" width="15"><img
+									src="http://esyria.sy/sites/design/weather_arrow.gif"
+									alt="ثلاثة ايام أخرى" width="10" height="6" border="0"
+									style="cursor: pointer"
+									onclick="document.getElementById('head_pic4').style.visibility = 'visible';document.getElementById('head_pic4').innerHTML='<br><p align=center ><img src=http://esyria.sy/sites/design/top_loader.gif></p><br>&nbsp;'; PostRequestView(4,'ajax_content.php','&name=weather_three_days&city=08&ranid='+Math.random(),4,'get');">
+								</td>
+							</tr>
+						</table>
+						</td>
+						<td width="1" bgcolor="#FFFFFF"></td>
+						<td>
+						<table width="100%" height="100%" border="0" cellspacing="0"
+							cellpadding="0">
+							<tr>
+								<td bgcolor="#5A5152" class="header_bar">
+								<form action="" method="get" style="display: inline"
+									name="foSearch"
+									onSubmit="var searchText = trim(document.foSearch.search.value); if (searchText == '' || searchText.length < 3 || searchText == 'أدخل نص البحث...') {alert ('أدخل نصاً ليتم البحث عنه...'); return false;}return true;">
+								<table width="185" border="0" height="100%" cellspacing="0"
+									cellpadding="0">
+									<tr>
+										<td align="center" width="140"><input type="text"
+											name="search" class="input_search"
+											onFocus="if (this.value == 'أدخل نص البحث...') this.value = ''; else this.value = trim (this.value);"
+											onBlur="if (trim(this.value) == '') this.value  = 'أدخل نص البحث...';"
+											value="أدخل نص البحث..."></td>
+										<td align="center"><input name="image" type="image"
+											id="search_button"
+											src="http://esyria.sy/sites/design/search_gray.jpg"
+											alt="ابحث"></td>
+									</tr>
+								</table>
+								</form>
+								</td>
+								<td width="1" bgcolor="#FFFFFF"></td>
+								<td width="105">
+								<table width="100%" height="100%" border="0" cellspacing="0"
+									cellpadding="0" dir="ltr">
+									<tr>
+										<td width="1"></td>
+										<td><img src="http://esyria.sy/sites/design/font_large_gray.jpg" alt="كبير" onclick="changeFont ('15', 'large');" style="cursor: pointer" name="font_icons" id="font_large"></td><td><img src="http://esyria.sy/sites/design/font_medium_gray.jpg" alt="متوسط" onclick="changeFont ('14', 'medium');" style="cursor: pointer" name="font_icons" id="font_medium"></td><td><img src="http://esyria.sy/sites/design/font_small_gray.jpg" alt="صغير" onclick="changeFont ('11', 'small');" style="cursor: pointer" name="font_icons" id="font_small"></td>										<td class="header_bar" dir="rtl"  style="padding-right:5px;background-color: #5A5152;" name="theme_based">حجم
+										الخط :</td>
+									</tr>
+								</table>
+								</td>
+								<td width="1" bgcolor="#FFFFFF"></td>
+								<td width="80" align="center">
+								<table width="100%" height="25" border="0" cellspacing="0"
+									cellpadding="0" align="center">
+									<tr>
+									
+	              	<td align="center">
+	              		<img src="http://esyria.sy/sites/design/theme_red.jpg" alt="أحمر" width="12" height="11" onclick="changeThemeColor('#90322a', 'red')" style="cursor: pointer" name="theme_icon">
+	              	</td>
+	              		
+	              	<td align="center">
+	              		<img src="http://esyria.sy/sites/design/theme_gray_selected.jpg" alt="رمادي" width="12" height="11" onclick="changeThemeColor('#5A5152', 'gray')" style="cursor: pointer" name="theme_icon">
+	              	</td>
+	              		
+	              	<td align="center">
+	              		<img src="http://esyria.sy/sites/design/theme_blue.jpg" alt="أزرق" width="12" height="11" onclick="changeThemeColor('#425F67', 'blue')" style="cursor: pointer" name="theme_icon">
+	              	</td>
+	              											</tr>
+								</table>
+
+								</td>
+							</tr>
+						</table>
+						</td>
+						<td width="1" bgcolor="#FFFFFF"></td>
+						<td width="302">
+						<table width="100%" height="100%" border="0" cellspacing="0"
+							cellpadding="0">
+							<tr>
+								<td align="right" valign="middle" class="header_bar" dir="rtl"
+									style="padding-right: 5px;" name="theme_based"></td>
+								<td width="83">
+								<table width="100%" height="100%" border="0" cellspacing="0"
+									cellpadding="0">
+									<tr>
+										<td width="1" bgcolor="#FFFFFF"></td>
+										<td align="center"><img src="http://esyria.sy/sites/design/fav_icon.gif"
+											onClick="if (document.all) window.external.AddFavorite('http://www.esyria.sy/eraqqa/', 'موقع  الرقة');else alert ('لإضافة eSyria إلى المفضلة، اضغط ctrl + d');"
+											style="cursor: pointer" alt="أضف eSyria إلى المفضلة"></td>
+										<td align="center"><img
+											src="http://esyria.sy/sites/design/home_icon.gif"
+											alt="اجعل eSyria  صفحتك الرئيسية" width="19" height="19"
+											style="cursor: pointer;"
+											onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.esyria.sy/eraqqa/'); return false;"></td>
+										<td width="17">&nbsp;</td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">
+
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+
+						<!-- Right Menu Start -->
+
+						<td valign="top">						<div id="wideDiv"
+							style="width: 140px; display: block; position: relative; background-color: #e8e8e8">
+						<table width="140" bgcolor="#e8e8e8" border="0" cellspacing="0"
+							cellpadding="0">
+							<tr>
+								<td height="3"></td>
+							</tr>
+							<tr>
+								<td bgcolor="c7c8ca" height="17"><span class="maincattitle"
+									style="padding-right: 8px;">التصنيفات</span></td>
+							</tr>
+							<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/" class="cattitle">الصفحة
+								الرئيسية</a></td>
+							</tr>
+
+							<tr>
+								<td>
+								<table width="90%" height="100%" cellpadding="0" cellspacing="0"
+									align="center" border="0">
+									<tr bgcolor="#e8e8e8">
+										<td width="11"></td>
+										<td width="100%" class="dashed"><span class="small_text">&nbsp;</span></td>
+										<td width="11"></td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/index.php?p=syrianews"
+									class="cattitle">أخبار سورية</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=news"
+									class="cattitle">أخبار الرقة وريفها</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=activities"
+									class="cattitle">أنشطة</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=literature"
+									class="cattitle">أدب</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=arts"
+									class="cattitle">فن</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=directories"
+									class="cattitle">من المغترب</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=round"
+									class="cattitle">جولة</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=multimedia&category=multimedia"
+									class="cattitle">صوت وصورة</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=directions"
+									class="cattitle">اتجاهات</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=publicvoice"
+									class="cattitle">حلول ومقترحات</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=places"
+									class="cattitle">أماكن</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=ruins"
+									class="cattitle">آثار</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=ideas"
+									class="cattitle">شباب وجامعات</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=sport"
+									class="cattitle">رياضة</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=business"
+									class="cattitle">أعمال</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=misc"
+									class="cattitle">منوعات</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=transportations"
+									class="cattitle">طرق ومواصلات</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=community"
+									class="cattitle">مجتمع</td>
+							</tr>
+														<tr>
+								<td height="22" style="padding-right: 8px;"><a
+									href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=characters"
+									class="cattitle">شخصيات من الرقة</td>
+							</tr>
+														<tr>
+								<td>
+								<table width="90%" height="100%" cellpadding="0" cellspacing="0"
+									align="center" border="0">
+									<tr bgcolor="#e8e8e8">
+										<td width="11"></td>
+										<td width="100%" class="dashed"><span class="small_text">&nbsp;</span></td>
+										<td width="11"></td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="ebook_col" valign="top">
+								<table width="140" height="100%" cellpadding="0" cellspacing="0"
+									align="right" border="0">
+									<tr>
+										<td valign="top">
+										<table width="140" cellpadding="0" cellspacing="0"
+											align="center" border="0">
+											<tr height="28">
+												<td class="ebook_col"></td>
+												<td class="ebook_center_col" height="28">كتاب اليوم</td>
+												<td class="ebook_col"></td>
+											</tr>
+											<tr height="121">
+												<td class="ebook_col"></td>
+												<td height="121" class="ebook_center_col"><a target='_blank' href='http://www.esyria.sy/ebooks/index.php?id=MjIx'><img width='84' height='120' src='http://www.esyria.sy/ebooks/images/2010/toffah.jpg'  alt='التفاحة الرابعة بعد منتصف العمر' class='story_thub'></a>												
+												
+												<td class="ebook_col"></td>
+											</tr>
+											<tr height="11">
+												<td class="ebook_col"></td>
+												<td class="ebook_center_col" height="11" valign="top"><img
+													src="http://esyria.sy/sites/design/pic_reflection.jpg"
+													class="ebook_reflection_img" /></td>
+												<td class="ebook_col"></td>
+											</tr>
+											<tr height="27">
+												<td colspan="3" class="ebook_name"><a target='_blank' href='http://www.esyria.sy/ebooks/index.php?id=MjIx'>التفاحة الرابعة بعد منتصف العمر</a>												</td>
+											</tr>
+											<tr height="1" bgcolor="#e8e8e8">
+												<td colspan="3">
+												<table width="90%" height="100%" cellpadding="0"
+													cellspacing="0" align="center" border="0">
+													<tr bgcolor="#e8e8e8">
+														<td width="11"></td>
+														<td width="100%" class="dashed"><span class="small_text">&nbsp;</span></td>
+														<td width="11"></td>
+													</tr>
+												</table>
+												</td>
+											</tr>
+										</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+										<table width="140" cellpadding="0" cellspacing="0"
+											align="center" border="0">
+											<tr>
+												<td colspan="3" bgcolor="#e8e8e8" align="center"
+													style="padding-top: 10px; padding-bottom: 10px"> <iframe
+													src="http://www.esyria.sy/ads/draw_adv.php?z_id=ODI=" class="adv" frameborder="0"
+													width="103px" height="219px" marginwidth="0"
+													marginheight="0" scrolling="no"></iframe> </td>
+											</tr>
+										</table>
+										</td>
+									</tr>
+								</table>
+
+								</td>
+							</tr>
+						</table>
+						</div>
+						</td>
+						<!-- Right Menu End -->
+						<td valign="top" style="padding-right:px;"  align="right" width="100%" >
+						<!-- Body Start --> <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%"><tr><td  style="padding-left:15px; padding-right:15px;padding-top:8px;">
+   <table class="updatebar" width="100%">
+ 	<tr class="updatebar">
+    	<td class="updatebar" align="center">مجتمع
+    	</font></font></td>
+        <td align="left" width="95" height="25">
+        	<a href="http://www.esyria.sy/news/" target="_blank">
+        		<img class="add_article" src="http://esyria.sy/sites/design/article.jpg" border="0" />
+            </a>
+        </td>
+	</tr>
+ </table><br />
+
+			<p>
+				<span class="news_title large_font" style="font-size: 13px" align="justify">
+				تجارة الصوف.. وسوقها المميزة
+				</span>
+			</p>
+			
+			<p>
+				<span class="news_spec small_font"  style="font-size: 12px">
+					<p align="right">
+						<img src="http://esyria.sy/sites/design/esyria_logo.gif" border="0" alt="" align="middle" />
+						<span class="news_author  small_font">جاسم العيادة		
+						</span>
+		  			</p>
+					 الأربعاء 14 كانون الثاني  2009<br /><br />
+				</span>
+			</p>
+			<p class="news_body">
+				<span class="news_body small_font" style="font-size: 13px">
+				تعتبر "الرقة" واحدة من أهم المحافظات السورية، في إنتاج الصوف الطبيعي الخام، والذي هو أحد أهم منتجات الثروة الحيوانية، ورغم المنافسة الشديدة التي يلقاها الصوف من الألياف الصناعية، وخاصة في السنوات الأخيرة، إلا أنه مازال محتفظاً بمكانته بين بقية الألياف الهامة في الصناعة، لأهمية خواصه الطبيعية، فهو يمتاز بالمتانة والمرونة وقوة الاحتمال، وهو عازل جيد للحرارة، ويلي القطن في أهميته بين الألياف الطبيعية.
+				</span>
+			</p>
+			<!-- Axiom Importer Templates -->
+<!-- Fifth template-->
+<script language="javascript" type="text/javascript">
+<!--
+	function enlarge(image, title)
+	{
+		var top = (screen.height - 500) / 2;
+		var left = (screen.width - 500) / 2;
+		settings = "menubar=no,resizable=no,scrollbars=auto,status=no,toolbar=no,width=500,height=500,top=" + top + ",left=" + left;
+		imageWindow = window.open("", "", settings);
+		imageWindow.document.write('<center><img src="'+image+'">');
+		imageWindow.document.write('<br><br><a href="javascript:window.close()">إغلاق</a></center>');
+		imageWindow.document.close();
+		imageWindow.document.title = title;
+		var cssNode = imageWindow.document.createElement("link"); 
+		cssNode.setAttribute("rel", "stylesheet"); 
+		cssNode.setAttribute("type", "text/css"); 
+		cssNode.setAttribute("href", "__site.css"); 
+		imageWindow.document.getElementsByTagName("head")[0].appendChild(cssNode); 
+	}//enlarge()
+-->
+</script>
+<table border="0" cellpadding="0" cellspacing="0"  style="float: right"><tr>
+															<td align="center">
+																<img src="http://esyria.sy/sites/images/raqqa/community/085597_2009_01_14_16_39_00.jpg" class="content_image_right"  width="200" alt="تكبير&nbsp;الصورة" onclick="enlarge(this.src,'تكبير&nbsp;الصورة')">
+															</td>
+														</tr></table>
+<p align="justify" 
+
+class="content small_font">
+<span class="small_font">موقع eRaqqa وبتاريخ (8/1/2009)، التقى السيد "فايز عطُّورة"، وهو صاحب محلات لبيع الصوف والقطن، في شارع "القنيطرة" المعروف بشارع "تل أبيض"، وبسؤاله عن أهمية تجارة الصوف في مدينة "الرقة"، تحدث قائلاً: «في الواقع إن تجارة الصوف في "الرقة"، تكاد تكون داخلية ومحصورة ضمن نطاق المحافظة، أي أن كمية الصوف الذي ينتجه مربُّو الأغنام، تباع بكاملها تقريباً لسكان "الرقة"، وسبب ذلك ليس قلة الإنتاج، بل زيادة الطلب على هذه المادة، وخاصة في الريف، حيث أن جميع أغطية النوم "اللحاف" والمراقد "الدوشك"، وفي كثير من الأحيان "الوسائد"، يفضل الناس صناعتها من الصوف، علماً أنها تستهلك كميات كبيرة منه، وإلى اليوم يعتبر شراء الصوف من أهم التجهيزات للزواج، وغالباً ما يتولَّى أهل العروس شراءه وتجهيزه من المهر المقدَّم لابنتهم، ويعدُّ الموسم المثالي لبيع الصوف في "الرقة"، هو ما بعد الحصاد، وذلك بسبب كثرة الزيجات في هذه الفترة، بسبب بيع المزارعين لمحاصيلهم، وتوفر السيولة النقدية لديهم، وانعكاس ذلك على كافة الفعاليات الاقتصادية في البلد».<br class="line_break"/>
+<br class="line_break"/>
+وعن طريقة الحصول على الصوف، يحدثنا "العطورة": «هناك عدة طرق لبيع الصوف من قبل المنتجين، فأحياناً يقوم بعض تجار الصوف، بدفع سلفة نقدية لمربي المواشي، كجزء من قيمة الإنتاج، وذلك قبل موسم "الجَّز" بشهر تقريباً، وبعد إجراء عملية جز الأغنام، يستلم التاجر الصوف، بعد </span>
+<table border="0" cellpadding="0" cellspacing="0"  style="float: left"><tr>
+															<td align="center">
+																<img src="http://esyria.sy/sites/images/raqqa/community/085597_2009_01_14_16_39_00.image1.jpg" class="content_image_left"  width="200" alt="تكبير&nbsp;الصورة" onclick="enlarge(this.src,'تكبير&nbsp;الصورة')">
+															</td>
+														</tr><tr>
+													<td class="image_caption">السيد فايز عطورة</td></tr></table>
+<span class="small_font">تحديد السعر وفق أسعار السوق الرائجة، وتسديد كامل قيمته، وأحياناً أخرى، يقوم بعض المربين المنتجين للأصواف، بوضع إنتاجهم من الصوف الخام، برسم الأمانة لدى المحلات التجارية في المدينة، بحيث يقوم أصحاب المحلات ببيع هذه الأصواف الخام على حساب المنتج، بعد الاتفاق على عمولة محددة، وتسمى هذه العملية البيع بالأمانة، وهناك طريق ثالثة، حيث يقوم بعض المنتجين بعد جز أغنامهم ببيع الصوف الخام إلى التجار مباشرة، أو للمستهلكين بحسب الأسعار الرائجة».<br class="line_break"/>
+<br class="line_break"/>
+وعن عملية جزِّ الصوف، يقول "العطورة": «جز الصوف يعني قص صوف الأغنام بمقصَّات يدوية تسمى "الزَّو"، أو باستعمال آلات جز كهربائية، تعمل بالكهرباء أو "الديزل"، وفي محافظة "الرقة"، عادةً ما تجزُّ الأغنام في الربيع، وتحديداً في منتصف شهر نيسان، عندما يميل الطقس للدفء، حيث يجب عدم جز الأغنام في الطقس البارد، كما ويجب عدم تأخيره لأن جز الأغنام في الطقس الحار يجعلها معرضة لحرارة زائدة، تؤدي لزيادة تعرق الحيوان، مما يؤدي إلى التصاق الصوف بالمقصَّات، كما وتكون سبباً في مضايقة الأغنام، وقد تؤدي الحرارة الزائدة إلى تساقط الصوف، ويعدُّ استعمال آلات الجز الكهربائية، أفضل بكثير من المقصات العادية، وذلك لأسباب عديدة منها، توفير الوقت والجهد، فجز رأس من الغنم آلياً، لا يستغرق أكثر من /5/دقائق، بينما يستغرق أضعاف هذه المدة في المقص العادي، إضافة </span>
+<table border="0" cellpadding="0" cellspacing="0"  style="float: right"><tr>
+															<td align="center">
+																<img src="http://esyria.sy/sites/images/raqqa/community/085597_2009_01_14_16_39_00.image2.jpg" class="content_image_right"  width="200" alt="تكبير&nbsp;الصورة" onclick="enlarge(this.src,'تكبير&nbsp;الصورة')">
+															</td>
+														</tr><tr>
+													<td class="image_caption">جز الصوف الآلي</td></tr></table>
+<span class="small_font">إلى أن الطريقة الأولى تضمن الحصول على كمية أكبر من الصوف، فالجز الآلي لا يترك صوفاً على الجسم بحيث يتم الجز بالقرب من سطح الجلد، مما يزيد من كمية الصوف الناتج عن كل رأس، وهذا ما يؤدي لزيادة المردود، وبالتالي زيادة ربح المربي، وهو أكثر أماناً على سلامة الأغنام، فالجروح التي يمكن أن تنجم عن هذه الطريقة، عادةً ما تكون طفيفة، وتعالج بسهولة، على عكس الجروح التي يحدثها المقص العادي، حيث يضطر المربي في كثير من الأحيان، لذبح الأغنام المصابة، نتيجة بقر بطنها أو قص جزء من ضروعها، علاوة على أنه من الناحية الاقتصادية فإن الجز الآلي أوفر بكثير من العادي، حيث أن الأجرة تكون أقل».<br class="line_break"/>
+<br class="line_break"/>
+وعن أنواع الصوف الذي تنتجه محافظة "الرقة"، يتحدث "العطورة بقوله: «هناك ثلاثة أنواع رئيسية من الأصواف التي تنتجها المحافظة، وهي صوف مواشي البدو، وصوف الشامية وصوف الجزيرة، وهي تختلف من حيث الجودة والملمس واللون، فأغنام البدو تعطي صوفاً يعتبر الأكثر جودة على الإطلاق، وذلك لأن البدو يختارون أفضل المراعي لمواشيهم، فهي ثروتهم الرئيسية التي يعيشون من خلالها، لذلك تراهم يبذلون جهداً كبيراً للحفاظ عليها، أما النوع الثاني فهو صوف أغنام منطقة الشامية، والشامية تعني الأراضي الواقعة جنوب نهر الفرات، وهي تتميز بخصوبتها وتوفر المراعي الطبيعية فيها، ويميل الصوف </span>
+<table border="0" cellpadding="0" cellspacing="0"  style="float: left"><tr>
+															<td align="center">
+																<img src="http://esyria.sy/sites/images/raqqa/community/085597_2009_01_14_16_39_00.image3.jpg" class="content_image_left"  width="200" alt="تكبير&nbsp;الصورة" onclick="enlarge(this.src,'تكبير&nbsp;الصورة')">
+															</td>
+														</tr><tr>
+													<td class="image_caption">مستودع الصوف</td></tr></table>
+<span class="small_font">في هذه المنطقة  إلى اللون الأحمر، وفي المرتبة الأخيرة يأتي صوف أغنام منطقة الجزيرة، وهي الأراضي الواقعة شمال النهر، ويتميز صوف الأغنام في هذه المنطقة بقصره، نتيجة قلَّة المراعي الطبيعية، واستعمال العلف الصناعي لتغذية المواشي، والصوف في منطقة الجزيرة ليس له لون محدد».<br class="line_break"/>
+<br class="line_break"/>
+وأخيراً يضيف "العطورة": «بالإضافة لكوننا في مدينة "الرقة" نبيع الصوف الخام، إلا أننا نبيع إلى جانبه الصوف المغسول، والذي نشتريه من المحافظات الأخرى مثل "حلب" و"حماة" و"حمص"».</span>
+</p>
+<!-- Developed by TAMAYUZ--><br />
+<div style="width:100%; clear: both">
+		<table align="center">
+		<tr>
+			<td>
+				<a target="_blank" href="__print.php?site=raqqa&filename=200901141635014">
+					<img src="http://esyria.sy/sites/design/print.jpg" width="24" height="24" border=0 alt="نسخة سهلة الطباعة">
+				</a>
+			</td>
+			<td>
+				<a target="blank" href="__emailstory.php?site=raqqa&filename=200901141635014&Title=تجارة الصوف.. وسوقها المميزة">
+					<img src="http://esyria.sy/sites/design/sendto.jpg" width="24" height="24" border=0 alt="إرسال المادة الحالية بالبريد">
+				</a>
+			</td>	
+			<td>
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style">
+					<a href="#" class="addthis_button_compact"><img src="http://esyria.sy/sites/design/share.png"  border="0"></a>
+				</div>
+				<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=esyria"></script>
+				<!-- AddThis Button END -->
+			</td>
+		</tr>
+</table>
+	<div>
+			<img alt="يانصيب معرض دمشق الدولي - إصدار رأس السنة الأول - الجائزة الكبرى 80 مليون وجوائز أخرى بقيمة 225 مليون - يجري السحب بتاريخ 10 
+كانون الثاني 2017" src="/img/ad_2016_yanaseeb.jpg" style="max-width: 100%; margin: 0 auto; display: block" />
+	</div>
+	<table align="center">
+		<tr>
+			<td colspan="3" style="padding-right: 60px">
+				<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=community" class="close"><img src="http://esyria.sy/sites/design/back.jpg" border="0" alt="عودة إلى فئة مجتمع"  style="vertical-align: middle;"  /></a>
+				<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=community" class="close">إلى فئة مجتمع</a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="padding-right: 60px">
+				<a href="http://www.esyria.sy/eraqqa/" class="close"><img src="http://esyria.sy/sites/design/back.jpg" border="0" alt="عودة إلى موقع الرقة"  style="vertical-align: middle;"  /></a>
+				<a href="http://www.esyria.sy/eraqqa/" class="close">إلى موقع الرقة</a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="padding-right: 60px">
+				<a href="http://esyria.sy/" class="close"><img src="http://esyria.sy/sites/design/back.jpg" border="0" alt="عودة إلى موقع eSyria" style="vertical-align: middle;" /></a>
+				<a href="http://esyria.sy/" class="close">إلى موقع eSyria</a>
+			</td>
+		</tr>
+	</table>
+</div>
+</tr></td></table>
+ <!-- Body End --></td>
+						<td width="303" valign="top" align="center"
+							style="padding-top: 0px"><!-- Left Menu Start -->
+<table width="100%" border="0" height="100%" cellspacing="0"
+	cellpadding="0">
+	<tr>
+		<td valign="top" align="center" height="177">	<table width="100%" cellpadding="0" height="100%" cellspacing="0" border="0"  style="background-image:url(http://esyria.sy/sites/design/most_read_top.jpg); background-position:top; background-repeat:repeat-x;" >
+	<tr>
+	<td valign="top"  style="padding-top:15px;padding-right:15px;padding-left:15px;background-image:url(http://esyria.sy/sites/design/most_read_bu.jpg); background-position:bottom; background-repeat:repeat-x;">
+		<table width="100%" cellpadding="0"  height="100%" cellspacing="0" border="0" >
+		<tr>
+		<td valign="top" style="text-align:justify;">
+		<table align="left" dir="rtl" cellpadding="0" cellspacing="0" ><tr><td style="text-align:justify;">
+		<a class="most_read_title large_font" style="text-align:right;font-size: 11px" href="http://www.esyria.sy/eraqqa/" >
+		<img align="left" class="most_read_thum" alt="" vspace="10" hspace="10" src="http://www.esyria.sy/sites/images/raqqa/">		</a>	
+		</td></tr></table>
+		<a class="most_read_title large_font" style="text-align:right;font-size: 11px" href="http://www.esyria.sy/eraqqa/" >
+		<span class="most_read_title large_font" style="font-size: 11px"></span></a><br>
+		<span class="most_read_text small_font" style="font-size: 11px"></span>		
+		</td></tr><tr><td align="left" height="20">
+		<a class="news_fullstory small_font" style="text-align:right;font-size: 11px" href="http://www.esyria.sy/eraqqa/" ><span class="news_fullstory small_font" style="font-size: 12px">اقرأ المزيد</span></a>
+		</td></tr>
+		</table>
+	
+	</td>
+	</tr>
+</table>
+	</td>
+	</tr>
+	
+<tr>
+		<td class="block_service" height="20" style="padding-right:20px;background-color: #5A5152;">
+		 يمكنكم متابعتنا من خلال    
+		</td>
+	</tr>
+	<td>
+		<table align="center" cellpadding="0" cellspacing="5px">
+			<tr>
+				<td align="center"> 
+					<a href= "http://www.esyria.sy/n_rss/index.php" target="_blank">
+					<img src="http://esyria.sy/sites/design/rss.png"   border="0"/></a>
+				</td>
+				<td align="center">
+					<a href= "https://www.facebook.com/pages/eSyria/222321052599" target="_blank">
+					<img src="http://esyria.sy/sites/design/facebook.png"  border="0"/>   </a>
+				</td>
+				<td align="center">
+					<a href= "http://twitter.com/eSyria" target="_blank">
+					<img src="http://esyria.sy/sites/design/twitter.png"   border="0"/>   </a>
+				</td>
+			</tr>
+			</table>
+	</td>
+	</tr>
+
+	<tr>
+		<td class="block_service" height="20" style="padding-right:20px;background-color: #5A5152;">
+		خدماتنا</td>
+	</tr>
+	<tr>
+		<td valign="top" align="center">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		
+			<tr>
+				<td><!-- Start  Service 1 -->
+				<div
+				>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td rowspan="2" width="75"><a href="http://esyria.sy/ecal/"
+							target="_blank"> <img src="http://esyria.sy/sites/design/ecal.jpg"
+							alt="موقع المفكرة الثقافية  " width="75" height="59" vspace="6"
+							hspace="6" border="0"></a></td>
+						<td style="padding-right: 8px" height="22"><a
+							href="http://esyria.sy/ecal/" class="title_service"
+							style="text-decoration: none;" target="_blank"> <span
+							class="title_service">موقع المفكرة الثقافية  </span></a></td>
+					</tr>
+					<tr>
+						<td style="padding-right: 8px"><span class="text_service">موقع يقدم المعلومات عن الأحداث والأنشطة الثقافية في جميع محافظات القطر .</span></td>
+					</tr>
+					<tr>
+						<td height="1" class="small_text" colspan="2">
+						<div id="div_service1"
+							style="height: 1px; display: block; border: 1 #000000"></div>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<!-- End  Service 1 --></td>
+			</tr>
+			
+			<tr>
+				<td><!-- Start  Service 2 -->
+				<div
+				>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td rowspan="2" width="75"><a href="http://esyria.sy/flight/"
+							target="_blank"> <img src="http://esyria.sy/sites/design/flight.jpg"
+							alt="موقع حركة الطيران " width="75" height="59" vspace="6"
+							hspace="6" border="0"></a></td>
+						<td style="padding-right: 8px" height="22"><a
+							href="http://esyria.sy/flight/" class="title_service"
+							style="text-decoration: none;" target="_blank"> <span
+							class="title_service">موقع حركة الطيران </span></a></td>
+					</tr>
+					<tr>
+						<td style="padding-right: 8px"><span class="text_service">موقع يقدم المعلومات عن حركة الطيران في مطارات الجمهورية العربية السورية .</span></td>
+					</tr>
+					<tr>
+						<td height="1" class="small_text" colspan="2">
+						<div id="div_service2"
+							style="height: 1px; display: block; border: 1 #000000"></div>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<!-- End  Service 2 --></td>
+			</tr>
+			
+			<tr>
+				<td><!-- Start  Service 3 -->
+				<div
+				>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td rowspan="2" width="75"><a href="http://www.egov.sy/"
+							target="_blank"> <img src="http://esyria.sy/sites/design/services_18.jpg"
+							alt="استعلامات حكومية" width="75" height="59" vspace="6"
+							hspace="6" border="0"></a></td>
+						<td style="padding-right: 8px" height="22"><a
+							href="http://www.egov.sy/" class="title_service"
+							style="text-decoration: none;" target="_blank"> <span
+							class="title_service">استعلامات حكومية</span></a></td>
+					</tr>
+					<tr>
+						<td style="padding-right: 8px"><span class="text_service">موقع يقدم المعلومات للمواطنين عن الخدمات الحكومية وكيفية الحصول عليها.</span></td>
+					</tr>
+					<tr>
+						<td height="1" class="small_text" colspan="2">
+						<div id="div_service3"
+							style="height: 1px; display: block; border: 1 #000000"></div>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<!-- End  Service 3 --></td>
+			</tr>
+			
+			<tr>
+				<td><!-- Start  Service 4 -->
+				<div
+				>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td rowspan="2" width="75"><a href="http://www.esyria.sy/dir/"
+							target="_blank"> <img src="http://esyria.sy/sites/design/services_32.jpg"
+							alt="دليل المواقع السورية" width="75" height="59" vspace="6"
+							hspace="6" border="0"></a></td>
+						<td style="padding-right: 8px" height="22"><a
+							href="http://www.esyria.sy/dir/" class="title_service"
+							style="text-decoration: none;" target="_blank"> <span
+							class="title_service">دليل المواقع السورية</span></a></td>
+					</tr>
+					<tr>
+						<td style="padding-right: 8px"><span class="text_service">دليل يشمل كافة المواقع السورية على شبكة الانترنيت مصنفة حسب فئات.</span></td>
+					</tr>
+					<tr>
+						<td height="1" class="small_text" colspan="2">
+						<div id="div_service4"
+							style="height: 1px; display: block; border: 1 #000000"></div>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<!-- End  Service 4 --></td>
+			</tr>
+			
+			<tr>
+				<td><!-- Start  Service 5 -->
+				<div
+				>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td rowspan="2" width="75"><a href="http://www.esyria.sy/eweather/"
+							target="_blank"> <img src="http://esyria.sy/sites/design/services_40.jpg"
+							alt="حالة الطقس في سورية" width="75" height="59" vspace="6"
+							hspace="6" border="0"></a></td>
+						<td style="padding-right: 8px" height="22"><a
+							href="http://www.esyria.sy/eweather/" class="title_service"
+							style="text-decoration: none;" target="_blank"> <span
+							class="title_service">حالة الطقس في سورية</span></a></td>
+					</tr>
+					<tr>
+						<td style="padding-right: 8px"><span class="text_service">حالة الطقس في محافظتك ، اليوم وكل ساعة والايام القادمة أيضا ، نظم إجازتك .</span></td>
+					</tr>
+					<tr>
+						<td height="1" class="small_text" colspan="2">
+						<div id="div_service5"
+							style="height: 1px; display: block; border: 1 #000000"></div>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<!-- End  Service 5 --></td>
+			</tr>
+			
+			<tr>
+				<td><!-- Start  Service 6 -->
+				<div
+				>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td rowspan="2" width="75"><a href="http://www.esyria.sy/ebooks/"
+							target="_blank"> <img src="http://esyria.sy/sites/design/services_22.jpg"
+							alt="موقع الكتاب" width="75" height="59" vspace="6"
+							hspace="6" border="0"></a></td>
+						<td style="padding-right: 8px" height="22"><a
+							href="http://www.esyria.sy/ebooks/" class="title_service"
+							style="text-decoration: none;" target="_blank"> <span
+							class="title_service">موقع الكتاب</span></a></td>
+					</tr>
+					<tr>
+						<td style="padding-right: 8px"><span class="text_service">موقع الكتاب السوري / روايات وقصص ، يمكنك  من التواصل مع القراء ، ارسال تعليقات ، الاشتراك بالنشرة البريدية لمتابعة كل جديد.</span></td>
+					</tr>
+					<tr>
+						<td height="1" class="small_text" colspan="2">
+						<div id="div_service6"
+							style="height: 1px; display: block; border: 1 #000000"></div>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<!-- End  Service 6 --></td>
+			</tr>
+						<tr>
+
+				<td class="block_service" height="20" style="padding-right:20px;background-color: #5A5152;">
+				المحافظات</td>
+			</tr>
+			<tr>
+				<td valign="top" align="center">
+				<table width="100%" border="0" cellspacing="1" cellpadding="1" style="background-image: url(http://esyria.sy/sites/design/gov_sl.jpg);background-position:bottom;background-repeat:repeat-x; ">
+					<tr>
+						<td><tr><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/edamascus/'>دمشق</a></li></td><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/ealeppo/'>حلب</a></li></td><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/elatakia/'>اللاذقية</a></li></td><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/ehoms/'>حمص</a></li></td></tr><tr><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/edeiralzor/'>دير الزور</a></li></td><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/esuweda/'>السويداء</a></li></td><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/equnaytra/'>القنيطرة</a></li></td><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/eidleb/'>إدلب</a></li></td></tr><tr><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/ehama/'>حماة</a></li></td><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/etartus/'>طرطوس</a></li></td><td width='20%' style='padding-right:20px'><li class='gov_title'>الرقة</li></td><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/edaraa/'>درعا</a></li></td></tr><tr><td width='20%' style='padding-right:20px'><li class='gov_title'><a class='gov_title' href='http://www.esyria.sy/ehasakeh/'>الحسكة</a></li></td><td width='20%' style='padding-right:20px'></td><td width='20%' style='padding-right:20px'></td><td width='20%' style='padding-right:20px'></td></tr></td>
+					</tr>
+					<tr>
+						<td class="block_service"  colspan="4" height="1" style="background-color: #5A5152;"></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			
+		</table>
+		</td>
+	</tr>
+</table>
+ <!-- Left Menu End --></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<!-- Footer Start -->
+			<tr>
+				<td height="60">
+				<table width="100%" height="60" border="0" cellspacing="0"
+					cellpadding="0">
+					<tr>
+						<td width="7">&nbsp;</td>
+						<td valign="top" align="center"><br>
+						<table width="100%" border="0" height="26" cellspacing="0"
+							cellpadding="0">
+							<tr>
+								<td height="26" dir="rtl" align="center" valign="top"><hr width="100%"  align="center" class="footer_hr"/>
+<table width="100%" border="0" cellpadding="2" cellspacing="1">
+<tr><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/index.php?p=syrianews">أخبار سورية</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=news">أخبار الرقة وريفها</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=activities">أنشطة</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=literature">أدب</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=arts">فن</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=directories">من المغترب</a></span></td></tr><tr><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=round">جولة</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=multimedia&category=multimedia">صوت وصورة</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=directions">اتجاهات</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=publicvoice">حلول ومقترحات</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=places">أماكن</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=ruins">آثار</a></span></td></tr><tr><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=ideas">شباب وجامعات</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=sport">رياضة</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=business">أعمال</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=misc">منوعات</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=transportations">طرق ومواصلات</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=community">مجتمع</a></span></td></tr><tr><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=face">وجه من الرقة</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=todayimg">صور من الرقة</a></span></td><td align="right">
+					<span class="footer_cats">
+					<a href="http://www.esyria.sy/eraqqa/index.php?p=stories&category=characters">شخصيات من الرقة</a></span></td></table>  
+<hr width="100%"  align="center" class="footer_hr"/>
+<span class="footer_text">
+	<a href="http://webmail.esyria.sy/index.php" target="_blank">بريد المحررين </a>|
+	<a href="index.php?p=aboutus">من نحن </a>|
+	<a href="index.php?p=contactus">اتصل بنا </a>|
+	<a href="index.php?p=policy"">اتفاقية استخدام الموقع</a></span>								</td>
+							</tr>
+						</table>
+						</td>
+						<td width="7"></td>
+					</tr>
+					<tr>
+					
+					
+					<tr height="34">
+						<td></td>
+						<td height="32" align="center">
+						<table width="100%" height="32" border="0" cellspacing="0"
+							cellpadding="0">
+							<tr>
+								<td height="1" colspan="3">
+								<hr width="100%" align="center" class="footer_hr" />
+								</td>
+							</tr>
+							<tr>
+								<td width="15%" align="right" class="footer_text">&nbsp;</td>
+
+								<td align="center" dir="rtl"><span class="footer_text">جميع
+								الحقوق محفوظة © eSyria 2016</span></td>
+								<td width="15%" class="footer_text" align="left">Powered by <a
+									href="http://www.nvssoft.com/axiom.asp" class="footer_text"
+									target="_blank">Axiom</a> & <a
+									href="http://www.nvssoft.com/triton.asp" class="footer_text"
+									target="_blank">Triton</a></td>
+							</tr>
+						</table>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<!-- Footer End -->
+		</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+<script
+	src="http://esyria.sy/sites/js/ajax_content_up.js"></script>
+<script
+	src="http://esyria.sy/sites/js/ajax_content.js"></script>
+
+<!-- ALEXA  -->
+	
+			<div style="display: none; height: 0px; width: 0px; z-index: 100;">
+			<SCRIPT type='text/javascript' language='JavaScript'
+				src='http://xslt.alexa.com/site_stats/js/s/a?url=www.esyria.sy/eraqqa/'></SCRIPT>
+			</div>
+	
+	<!-- ALEXA -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4388949-1");
+pageTracker._trackPageview();
+</script>
+<!--This page was created in 2.92657995224 seconds-->

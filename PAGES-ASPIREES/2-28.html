@@ -1,0 +1,1814 @@
+
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="">
+   <![endif]-->
+<!--[if IE 7]>
+   <html class="no-js lt-ie9 lt-ie8" lang="">
+	  <![endif]-->
+<!--[if IE 8]>
+	  <html class="no-js lt-ie9" lang="">
+		 <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"d7786719f8","applicationID":"29422776","transactionName":"blQEZUpXWURZAkcLV1ceK2d7GXlSTxJwDVZNQwldVFNFGFwERwNRVUI=","queueTime":0,"applicationTime":197,"agent":"","atts":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<title>الشرق  - جلسات السدو.. تحتل صدور المجالس بلا منازع</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="fb:pages" content="233670860060168" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="stylesheet" href="/assets/js/plugins/lightslider/css/lightslider.min.css">
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<!-- Start Date Piker plugin -->
+	<link rel="stylesheet" href="/assets/lib/themes/default.css">
+	<link rel="stylesheet" href="/assets/lib/themes/default.date.css">
+	<!-- Add the stylings *after* the pickadate theme files -->
+	<link rel="stylesheet" href="/assets/lib/themes/rtl.css">
+
+	<!-- Scripts -->
+	<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+	<script src="/assets/js/plugins/owl.carousel.min.js"></script>
+	<script src="/assets/js/plugins/owl.carousel2.thumbs.min.js"></script>
+	<script src="/assets/js/plugins/lightslider/js/lightslider.min.js"></script>
+	<script src="/assets/js/vendor/uilang.js"></script>
+	<script src="/assets/js/plugins/header.js"></script>
+	<script src="/assets/js/plugins/menu.js"></script>
+	<script src="/assets/js/main.js"></script>
+	<script src="/assets/js/plugins/responsiveslides.min.js"></script>
+
+	
+
+	<meta name="description" content='يُعد السدو أحد أقدم المظاهر التراثية، التي تذخر بها مجالسنا في قطر والخليج عامة، حيث يتم تزيين المجالس وبيوت الشعر بالسدو، وللسدو ألوان وطرازات مختلفة، وعادةً ما تتم صناعته من الصوف الخالص، وحديثًا أصبح يمزج ببعض الخامات الأخرى مثل..'>
+	<meta name="keywords" content='قطر, سوق واقف, السدو, المجالس'>
+	<meta name="abstract" content='بوابة الشرق'>
+
+	<meta property='og:title' content='جلسات السدو.. تحتل صدور المجالس بلا منازع | الشرق' />
+	<meta property='og:url' content='http://www.al-sharq.com/news/details/456897' />
+	<meta property='og:description' content='يُعد السدو أحد أقدم المظاهر التراثية، التي تذخر بها مجالسنا في قطر والخليج عامة، حيث يتم تزيين المجالس وبيوت الشعر بالسدو، وللسدو ألوان وطرازات مختلفة، وعادةً ما تتم صناعته من الصوف الخالص، وحديثًا أصبح يمزج ببعض الخامات الأخرى مثل..' />
+
+	<meta property='og:image' content='http://media.al-sharq.com/portalimages/news/large/279472_0.jpg' />
+
+	<meta property='twitter:title' content='جلسات السدو.. تحتل صدور المجالس بلا منازع | الشرق' />
+	<meta property='twitter:description' content='يُعد السدو أحد أقدم المظاهر التراثية، التي تذخر بها مجالسنا في قطر والخليج عامة، حيث يتم تزيين المجالس وبيوت الشعر بالسدو، وللسدو ألوان وطرازات مختلفة، وعادةً ما تتم صناعته من الصوف الخالص، وحديثًا أصبح يمزج ببعض الخامات الأخرى مثل..' />
+	<meta property='twitter:image' content='http://media.al-sharq.com/PortalImages/News/Large/279472_0.jpg' />
+	<meta property='twitter:url' content='http://www.al-sharq.com/news/details/456897' />
+
+	
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+			   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+<div id="search-overlay">
+    <div class="u">
+        <div class="row">
+            <div class="c-xs-12">
+                <div class="search-u">
+
+                    <form action="/news/search?" method="get">
+                        <input name="q" type="text" placeholder="ابحث فى الموقع" value="" class="search-box">
+             
+                        <button type="submit" value="Submit">
+                            <i class="search">
+                                <svg class="" viewBox="0 0 100 100">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </i>
+                        </button>
+                    </form>
+                </div>
+                <a href="#" class="close">
+                    <svg viewBox="0 0 348.333 348.334">
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="social-overlay">
+    <div class="u">
+        <div class="social-u">
+            <a href="#" class="close">
+                X
+            </a>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/alsharq.portal" title="Facebook">
+                        <i>
+                            <svg class="fb_icn" viewBox="0 0 20 20">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/alsharq_portal" title="Twitter">
+                        <i>
+                            <svg class="tw_icn" viewBox="0 0 20 20">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/102463207539375169673" title="google plus">
+                        <i>
+                            <svg class="gp_icn" viewBox="0 0 20 20">
+                                <use xlink:href="#google-plus"></use>
+                            </svg>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UC5SvZ-pkEKt1E11n9Mx183w" title="you tube">
+                        <i>
+                            <svg class="yt_icn" viewBox="0 0 20 20">
+                                <use xlink:href="#you-tube"></use>
+                            </svg>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<header class="header">
+<!-- Start: GPT Sync -->
+<script type='text/javascript'>
+	var gptadslots = [];
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function () {
+			var useSsl = 'https:' === document.location.protocol;
+			var src = (useSsl ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+	    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+	})();
+</script>
+<!--Adomik randomizer for ad call key value targeting-->
+<script type="text/javascript">
+	window.Adomik = window.Adomik || {};
+	Adomik.randomAdGroup = function() {
+		var rand = Math.random();
+		switch (false) {
+			case !(rand < 0.09): return "ad_ex" + (Math.floor(100 * rand));
+			case !(rand < 0.10): return "ad_bc";
+			default: return "ad_opt";
+		}
+	};
+</script>
+<script type="text/javascript">
+
+			
+				//Adslot 1 declaration
+				gptadslots[1]= googletag.defineSlot('/49151695/alsharq.com-new/News_listing_page/News_details_page', [[1,1]],'div-gpt-ad-119426690562134383-1') .setTargeting('p',['sponsor1']).addService(googletag.pubads());
+
+				//Adslot 2 declaration
+				gptadslots[2]= googletag.defineSlot('/49151695/alsharq.com-new/News_listing_page/News_details_page', [[300,250]],'div-gpt-ad-119426690562134383-2').addService(googletag.pubads());
+
+				//Adslot 3 declaration
+				gptadslots[3]= googletag.defineSlot('/49151695/alsharq.com-new/News_listing_page/News_details_page', [[728,90]],'div-gpt-ad-119426690562134383-3').addService(googletag.pubads());
+				//Adslot 4 declaration
+				gptadslots[4]= googletag.defineSlot('/49151695/alsharq.com-new/News_listing_page/News_details_page', [[1,1]],'div-gpt-ad-119426690562134383-4') .setTargeting('p',['sponsor2']).addService(googletag.pubads());
+
+				//Adslot 5 declaration
+				gptadslots[5] = googletag.defineSlot('/49151695/alsharq.com-new/300x250-ros', [300, 250], 'div-gpt-ad-1418902681790-0').addService(googletag.pubads());
+
+				googletag.pubads().setTargeting('g',['female','male']).setTargeting('age',['13-17','18-24','25-34','35-49','50-above']);
+			
+	googletag.pubads().setTargeting('ad_group', Adomik.randomAdGroup());
+	googletag.pubads().enableSingleRequest();
+	googletag.pubads().enableSyncRendering();
+	googletag.enableServices();
+	googletag.cmd.push(function() {
+		googletag.defineSlot('/49151695/alsharq.com-new/logo-ros', [151, 90], 'div-gpt-ad-1462884583408-0').addService(googletag.pubads());
+	});
+</script>
+    <div class="u">
+        <div class="row">
+            <div class="c-xs-3 c-sm-3 c-md-2 c-lg-2">
+                <ul class="nav nav-list hide-from-lg">
+                    <li class="burger">
+                        <a class="menu-toggle" href="#menu">
+                            <i>
+                                <svg class="" viewBox="0 0 20 15">
+                                    <use xlink:href="#burger"></use>
+                                </svg>
+                            </i>
+
+                        </a>
+                    </li>
+                </ul>
+                <a href="/" class="logo hide-from-sm">
+                    <i>
+                        <svg class="" viewBox="0 0 130 75">
+                            <use xlink:href="#logo"></use>
+                        </svg>
+                    </i>
+                </a>
+            </div>
+            <div class="c-xs-6 c-sm-6 c-md-8 c-lg-7 ">
+                <div class="cntr hide-from-lg">
+                    <a href="/" class="logo ">
+                        <i>
+                            <svg class="" viewBox="0 0 130 75">
+                                <use xlink:href="#logo"></use>
+                            </svg>
+                        </i>
+                    </a>
+                </div>
+                <nav class="main-nav hide-from-sm">
+                    <ul>
+                        <li><a href="/">الرئيسية</a></li>
+                        <li class="has-dd">
+                            <a href="/news/list">
+                                أخبار
+                                <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul>
+                                <li><a href="/section/86">محليات</a></li>
+                                <li><a href="/section/87">أخبار عربية</a></li>
+                                <li><a href="/section/88">أخبار دولية</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dd">
+                            <a href="/section/89">
+                                اقتصاد                   <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul>
+                                <li><a href="/section/99">اقتصاد محلي  </a></li>
+                                <li><a href="/section/100">اقتصاد عربي </a></li>
+                                <li><a href="/section/101">اقتصاد دولي </a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dd">
+                            <a href="/section/90">
+                                رياضة                    <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul>
+                                <li><a href="/section/102">رياضة  محلية  </a></li>
+                                <li><a href="/section/103">رياضة عربية </a></li>
+                                <li><a href="/section/104">رياضة عالمية</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dd">
+                            <a href="#">
+                                تقارير وحوارات                    <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul>
+                                <li><a href="/section/110">تقارير </a></li>
+                                <li><a href="/section/111">تحقيقات  </a></li>
+                                <li><a href="/section/112">حوارات </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dd">
+                            <a href="/section/91">
+                                ثقافة وفنون                    <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul>
+                                <li><a href="/section/105">ثقافة محلية  </a></li>
+                                <li><a href="/section/106">ثقافة عربية</a></li>
+                                <li><a href="/section/107">ثقافة عالمية</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="/section/97">سيارات</a></li>
+                        <li><a href="/section/146">سياحة وسفر</a></li>
+                        <li class="has-dd">
+                            <a href="#">
+                                المزيد                    <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul>
+                                <li><a href="/editor/list">أراء الكتاب </a></li>
+                                <li><a href="/section/98">علوم وتكنولوجيا </a></li>
+                                <li><a href="/section/92">منوعات </a></li>
+                                <li><a href="/section/95">صحة وأسرة </a></li>
+                                <li><a href="/section/118">أسرة ومرأة </a></li>
+                                <li><a href="/section/96">دين ودنيا </a></li>
+                                <li><a href="/section/109">حوادث وجرائم </a></li>
+                                <li><a href="/section/113">صحافة عربية </a></li>
+                                <li><a href="/section/94">صحافة عالمية </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="c-xs-3 c-sm-3 c-md-2 c-lg-3">
+                <div class="utilities">
+                    <!-- a class="hide-from-sm" href="#" title="مشاركة">
+                        <i class="social">
+                            <svg class="" viewBox="0 0 100 100">
+                                <use xlink:href="#social"></use>
+                            </svg>
+                        </i>
+                    </a-->
+                    <a class="hide-from-sm" target="_blank" href="https://www.facebook.com/alsharq.portal" title="صفحتنا على فيسبوك">
+                        <i class="fb_icn">
+                            <svg class="" viewBox="0 0 20 20">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </i>
+                    </a>
+                    <a class="hide-from-sm" target="_blank" href="https://twitter.com/alsharq_portal" title="صفحتنا على تويتر">
+                        <i class="tw_icn">
+                            <svg class="" viewBox="0 0 20 20">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </i>
+                    </a>
+
+                    <a class="hide-from-sm" href="/account/?returnUrl=http%3a%2f%2fwww.al-sharq.com%3a80%2fnews%2fdetails%2f456897" title="تسجيل الدخول">
+                        <i class="user">
+                            <svg class="" viewBox="0 0 30 60">
+                                <use xlink:href="#user"></use>
+                            </svg>
+                        </i>
+                    </a>
+                    <a href="#" title="بحث">
+                        <i class="search">
+                            <svg class="" viewBox="0 0 100 100">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="menu menu-right" id="menu">
+    <div class="menu-scroll">
+        <div class="menu-wrap">
+            <div class="menu-content">
+                <nav class="">
+                    <ul>
+                        <li class=""><a href="/">الرئيسية</a></li>
+                        <li class="has-dd">
+                            <a href="#">
+                                أخبار
+                                <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul class="animated fadeInDown">
+                                <li><a href="/section/86">محليات</a></li>
+                                <li><a href="/section/87">أخبار عربية</a></li>
+                                <li><a href="/section/88">أخبار دولية</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dd">
+                            <a href="#">
+                                اقتصاد                   <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul class="animated fadeInDown">
+                                <li><a href="/section/99">اقتصاد محلي  </a></li>
+                                <li><a href="/section/100">اقتصاد عربي </a></li>
+                                <li><a href="/section/101">اقتصاد دولي </a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dd">
+                            <a href="#">
+                                رياضة                    <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul class="animated fadeInDown">
+                                <li><a href="/section/102">رياضة  محلية  </a></li>
+                                <li><a href="/section/103">رياضة عربية </a></li>
+                                <li><a href="/section/104">رياضة عالمية</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dd">
+                            <a href="#">
+                                تقارير وحوارات                    <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul class="animated fadeInDown">
+                                <li><a href="/section/110">تقارير </a></li>
+                                <li><a href="/section/111">تحقيقات  </a></li>
+                                <li><a href="/section/112">حوارات </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dd">
+                            <a href="/section/91">
+                                ثقافة وفنون                    <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul class="animated fadeInDown">
+                                <li><a href="/section/105">ثقافة محلية  </a></li>
+                                <li><a href="/section/106">ثقافة عربية</a></li>
+                                <li><a href="/section/107">ثقافة عالمية</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://www.al-sharq.com/html/DownloadNewsLetters">النسخة المطبوعة</a></li>
+                        <li><a href="http://www.al-sharq.com/section/97">سيارات</a></li>
+                        <li><a href="http://www.al-sharq.com/section/146">سياحة وسفر</a></li>
+                        <li class="has-dd">
+                            <a href="#">
+                                المزيد                    <i>
+                                    <svg viewBox="0 0 100 100">
+                                        <use xlink:href="#has-dd"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul class="animated fadeInDown">
+                                <li><a href="/editor/list">أراء الكتاب </a></li>
+                                <li><a href="/section/98">علوم وتكنولوجيا </a></li>
+                                <li><a href="/section/92">منوعات </a></li>
+                                <li><a href="/section/95">صحة وأسرة </a></li>
+                                <li><a href="/section/118">أسرة ومرأة </a></li>
+                                <li><a href="/section/96">دين ودنيا </a></li>
+                                <li><a href="/section/109">حوادث وجرائم </a></li>
+                                <li><a href="/section/113">صحافة عربية </a></li>
+                                <li><a href="/section/94">صحافة عالمية </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-social-u">
+                    <a href="https://www.facebook.com/alsharq.portal" title="Facebook">
+                        <i>
+                            <svg class="fb_icn" viewBox="0 0 20 20">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </i>
+                    </a>
+                    <a href="https://twitter.com/alsharq_portal" title="Twitter">
+                        <i>
+                            <svg class="tw_icn" viewBox="0 0 20 20">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+		<div class="u fxd_container">
+			<div class="l_TO">
+				<div class="l_ads_u">
+    <!-- Beginning Sync AdSlot 4 for Ad unit alsharq.com-new/News_listing_page/News_details_page ### size: [[1,1]]  -->
+    <div id='div-gpt-ad-119426690562134383-4'>
+        <script type='text/javascript'>
+            googletag.display('div-gpt-ad-119426690562134383-4');
+        </script>
+    </div>
+    <!-- End AdSlot 4 -->
+
+
+
+				</div>
+			</div>
+			<div class="r_TO">
+				<div class="r_ads_u">
+    <!-- Beginning Sync AdSlot 1 for Ad unit alsharq.com-new/News_listing_page/News_details_page ### size: [[1,1]]  -->
+    <div id='div-gpt-ad-119426690562134383-1'>
+        <script type='text/javascript'>
+            googletag.display('div-gpt-ad-119426690562134383-1');
+        </script>
+    </div>
+    <!-- End AdSlot 1 -->
+
+
+
+				</div>
+			</div>
+		</div>
+
+	
+
+<main class="u article">
+	<script>
+		$(function () {
+			var url = '/' + "News/UpdateNewsViews";
+			$.ajax({
+				url: url,
+				type: 'GET',
+				cache: false,
+				data: { type: 1, itemID: 456897 }
+			});
+		});
+	</script> 
+	<div id="inrpg" class="row">
+		<section id="inrpg_r" class="c-xs-12 c-md-2 c-lg-2">
+
+
+    <div class="w-u">
+        <h4 class="w-title-2">آخر الأخبار</h4>
+        <div class="scroll-on-moble">
+            <ul class="nl-s2">
+                    <li>
+                        <a href="/news/details/462740">
+                            <img src="http://media.al-sharq.com/PortalImages/News/Small/282960_0.jpg" alt="وظائف شاغرة للمعلمين في المدارس.. تعرّف على الشروط" />
+                            <p>وظائف شاغرة للمعلمين في المدارس.. تعرّف على الشروط</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/news/details/462769">
+                            <img src="http://media.al-sharq.com/PortalImages/News/Small/282981_0.JPG" alt="المحشادي: 1421 صقاراً يشاركون في مسابقات مهرجان &quot;مرمي 2017&quot;" />
+                            <p>المحشادي: 1421 صقاراً يشاركون في مسابقات مهرجان &quot;مرمي 2017&quot;</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/news/details/462767">
+                            <img src="http://media.al-sharq.com/PortalImages/News/Small/282980_0.jpg" alt=" مواطنون: &quot;تسوق بثقة&quot; تأخذ صدى واسعًا بين المحلات التجارية" />
+                            <p> مواطنون: &quot;تسوق بثقة&quot; تأخذ صدى واسعًا بين المحلات التجارية</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/news/details/462756">
+                            <img src="http://media.al-sharq.com/PortalImages/News/Small/282975_0.jpg" alt="صادق العماري يتلقى التهاني بتعيينه رئيساً للتحرير" />
+                            <p>صادق العماري يتلقى التهاني بتعيينه رئيساً للتحرير</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/news/details/462742">
+                            <img src="http://media.al-sharq.com/PortalImages/News/Small/282941_0.jpg" alt="&quot;راف&quot; تنفذ مشروعين إغاثيين لصالح 12 ألف موريتاني" />
+                            <p>&quot;راف&quot; تنفذ مشروعين إغاثيين لصالح 12 ألف موريتاني</p>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+		</section>
+		<section id="inrpg_c" class="c-xs-12 c-md-6 c-lg-7">
+            <div class="ads-u-1">
+                <div class="lb">
+			<!-- Beginning Sync AdSlot 3 for Ad unit alsharq.com-new/News_listing_page/News_details_page ### size: [[728,90]]  -->
+			<div id='div-gpt-ad-119426690562134383-3'>
+				<script type='text/javascript'>
+					googletag.display('div-gpt-ad-119426690562134383-3');
+				</script>
+			</div>
+			<!-- End AdSlot 3 -->
+
+                </div>
+                <div class="stkr adtmode">
+                    <div id='div-gpt-ad-1462884583408-0' style='height:90px; width:151px;'>
+                        <script type='text/javascript'>
+									googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462884583408-0'); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+			<artical class="main-artcl">
+					<header>
+						<p class="sub"></p>
+						<h1>جلسات السدو.. تحتل صدور المجالس بلا منازع</h1>
+						<p class="meta">
+							<span class="sec-label"> محليات </span>
+							
+							<span class="date-time">الجمعة 25-11-2016 الساعة 05:54 م</span>
+						</p>
+						<div class="share-btns">
+							<a href="whatsapp://send?text=جلسات السدو.. تحتل صدور المجالس بلا منازع http://www.al-sharq.com/news/details/456897" class="wa_icn hide-from-lg">
+								<i>
+									<svg viewBox="0 0 20 20">
+										<use xlink:href="#whats-app"></use>
+									</svg>
+								</i>
+							</a>
+							<a href="https://plus.google.com/share?url=http://www.al-sharq.com/news/details/456897" target="popup" onclick=" window.open(this.href, 'name' , 'width=600,height=400' ); return false; " class="gp_icn">
+								<i>
+									<svg viewBox="0 0 20 20">
+										<use xlink:href="#google-plus"></use>
+									</svg>
+								</i>
+							</a>
+							<a href="https://twitter.com/share?url=http://www.al-sharq.com/news/details/456897&via=alsharq_portal&text=جلسات السدو.. تحتل صدور المجالس بلا منازع" target="popup" onclick=" window.open(this.href, 'name' , 'width=600,height=400' ); return false; " class="tw_icn">
+								<i>
+									<svg viewBox="0 0 20 20">
+										<use xlink:href="#twitter"></use>
+									</svg>
+								</i>
+							</a>
+							<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.al-sharq.com/news/details/456897&title=جلسات السدو.. تحتل صدور المجالس بلا منازع" target="popup" onclick=" window.open(this.href, 'name' , 'width=600,height=400' ); return false; " class="fb_icn">
+								<i>
+									<svg viewBox="0 0 20 20">
+										<use xlink:href="#facebook"></use>
+									</svg>
+								</i>
+							</a>
+						</div>
+					</header>
+									<figure>
+
+            <img src="http://media.al-sharq.com/PortalImages/News/Large/279472_0.jpg" alt="محمد الشريف مدير أحد محلات بيع وتفصيل السدو" />
+                <figcaption>
+محمد الشريف مدير أحد محلات بيع وتفصيل السدو                </figcaption>
+
+
+
+					</figure>
+				<ul class="tags">
+
+						<li>
+							<i>
+								<svg class="" viewBox="0 0 20 20">
+									<use xlink:href="#tag"></use>
+								</svg>
+							</i> كلمات دالة
+						</li>
+							<li>
+									<a href="/news/list/19">قطر</a>
+							</li>
+							<li>
+									<a href="/news/list/2972">سوق واقف</a>
+							</li>
+							<li>
+									<a href="/news/list/80743">السدو</a>
+							</li>
+							<li>
+									<a href="/news/list/216773">المجالس</a>
+							</li>
+				</ul>
+					<span style="font-weight: bold">حسام مبارك </span>
+				<p><p><strong>الكثيرون يتنسمون من نسيجه عبق التراث والأصالة</strong></p><p><p><strong>شريف: النسيج يصنع من الصوف وحديثاً يُضاف إليه البوليستر</strong></p><p><p><strong>الزبائن يفضلون تفصيل السدو ويبتعدون عن الجاهز</strong></p><p><p><strong>محمد: ثلاثة ألوان رئيسية للسدو ومعظم الزبائن يفضلون الأحمر</strong></p><p><p><strong>جودة القماش والنقشات المنسوجة تتحكمان في السعر</strong></p><p><p><strong>ليبا: سوق السدو ينتعش أكثر في فصل الشتاء</strong></p><p><p><strong>السياح الخليجيون يفضلون منتجنا لجودته العالية وسعره المنافس</strong></p><p><p>يُعد السدو أحد أقدم المظاهر التراثية، التي تذخر بها مجالسنا في قطر والخليج عامة، حيث يتم تزيين المجالس وبيوت الشعر بالسدو، وللسدو ألوان وطرازات مختلفة، وعادةً ما تتم صناعته من الصوف الخالص، وحديثًا أصبح يمزج ببعض الخامات الأخرى مثل البوليستر، والسدو ينسج أفقيا، وغالباً ما يستخدم وبر الجمل أو شعر الماعز أو صوف الغنم لحياكته، كما يستخدم السدو فى حياكة الخيام أو بيوت الشعر، ولا يخلو منزل فى قطر من السدو، إما في المجالس أو في بيوت الشعر، كما يتم فرشه في العنن أثناء موسم التخييم، والكثيرون يتنسمون من نسيجه عبق التراث والأصالة لذلك يحافظون على اقتنائه، كما تتم صناعة بعض أنواع السجاد من قماش السدو، وبعض اللوازم الأخرى، والبعض يستخدم الخامات الخفيفة منه، في تنجيد مقاعد سياراتهم لتحمله الحرارة وكثرة الاستخدام.</p><p><p>"الشرق" زارت عددا من محلات بيع وتفصيل السدو في سوق واقف، للتعرف على أسعاره وطرازاته وخاماته ومصادر استيراد خاماته واليكم التفاصيل...</p><p><p><strong>تفصيل السدو</strong></p><p><p>بداية أكد محمد الشريف مدير أحد محلات بيع وتفصيل السدو، أن أكثر الزبائن يفضلون تفصيل السدو لمجالسهم أو خيامهم، ويبتعدون عن الجاهز، رغم ارتفاع سعر التفصيل مقارنة بالجاهز، وأوضح الشريف أن السدو الجاهز يتم استيراده من سوريا ومصر، أما قماش السدو فيتم استيراده من الصين، بالإضافة إلى كل من سوريا ومصر، ليتم تفصيله هنا في الدوحة، وقال الشريف: ان السدو الجاهز لا يقل جودة عن القماش الذي يتم تفصيله، ولكن معظم الزبائن يفضلون وضع بعض التفاصيل والإضافات على السدو، وأضاف أن هناك سجادا تتم صناعته من السدو، ويتم وضعه بجانب جلسات السدو لاكمال الديكور، وقال الشريف: ان تفصيل مجلس سدو واحد بقياساته المتعارف عليها، لا يأخذ وقتا طويلا، خصوصاً مع محترفى صناعة السدو، فهذه المهنة تحتاج إلى خبرة طويلة، لاتقان تفصيل السدو كما يجب.</p><p><p><strong>أسعار السدو</strong></p><p><p>وبيّن شريف أن السدو عادةً ما تتم صناعته من الصوف، ولكن حديثًا أصبح تضاف إليه مواد أخرى مثل: البوليستر، ومن النادر أن يكون هناك سدو من الصوف الصافي بنسبة 100%، وأوضح الشريف أن مقاسات جلسات السدو واحدة ومتعارف عليها، وهي 2 متر طولا في 70 سنتمترا عرضا، و 10 سم ارتفاعا، حيث يأتي الجاهز بهذه المواصفات، ويتم تفصيله كذلك بذات المواصفات، ولكن إذا أراد الزبون زيادة الطول والعرض فعليه أن يلجأ للتفصيل، وربما هذا ما يدفع العديدين لاختيار التفصيل بدلا من الجاهز .</p><p><p>وعن أسعار السدو الجاهز، قال الشريف: ان السدو الجاهز يمكن شراؤه دون مراتب، على أن يتم تلبيسه في البيت، وسعره 200 ريال، أما إذا تم بيعه بالمراتب الإسفنج ووسادات القطن فيتراوح سعره ما بين الـ 320 والـ 350 ريالا، حسب الألوان والخامات والأحجام، وبمواصفات اسفنج ضغط 20 ، أما السدو الذي يتم تفصيله فيُباع بسعر يتراوح بين 400 والـ 450 ريالا، وهذا بمواصفات إسفنج "ضغط مي" وهو الاسفنج الذي يأتي ثقيلا، مستطردا أن هناك إسفنجا بمواصفات ضغط مختلفة وهي 20 و30 و40، ويعد ضغط 30 و 40 أغلى انواع السدو المفصل، حيث يزيد سعر تفصيل طقم السدو الواحد على الـ 500 ريال، وأوضح الشريف أن الوسادة الواحدة، التي تأتي مع السدو الجاهز، تزن 2.5 كيلو ونصف من القطن، أما الوسادة الواحدة التي يتم تفصيلها مع طقم السدو، فتزن ما بين 4 و7 كيلو للوسادة الواحدة، حسب تفضيل الزبون، وهذا أحد أسباب ارتفاع أسعار أطقم السدو المفصل.</p><p><p><strong>لوازم المجالس</strong></p><p><p>من ناحيتها قالت ليبا إحدى البائعات بمحل للسدو: ان العديد من الزبائن يأتون للمحل الذي تعمل فيه من سائحي دول الخليج، حيث يجدون هنا منتجا ذا جودة عالية ، وسعرا منافسا، وقالت ليبا: ان السدو يأتي من سوريا وإيران، ويبلغ سعر بيع السدو السوري الجاهز حوالي 350 ريالا، أما السدو الايراني الذي يتم تفصيله فيتم بيعه بـ 1300 ريال، مع فرق متر طول للسدو الإيراني المفصل عن السدو السوري الجاهز، حيث يبلغ طول السدو السوري الجاهز 200 متر فقط، وأوضحت ليبا أن قماش السدو الإيراني الذي يتم استيراده منسوج من الصوف بنسبة 100%، وهذا ما يرفع سعره عن بقية أنواع السدو الأخرى، وعن إقبال الزبائن أوضحت ليبا أن أغلب الزبائن هم من المواطنين، الذين عادةً ما يقومون بتفصيل السدو لبيوت الشعر، وقلة منهم من يقوم بتفصيله للمجالس، حيث يعتمد العديد من المواطنين على الأثاث الحديث في فرش المجالس، وقالت ليبا: ان الاقبال على شراء السدو، يزداد في فصل الشتاء عن فصل الصيف، وتابعت: ان هناك لوازم أخرى للمجالس، تتم صناعتها من السدو، بخلاف الجلسات مثل سلة مهملات صغيرة، وحافظة المناديل الورقية، والطاولات متوسطة وصغيرة الحجم، فضلا عن بعض الأنواع من السجاد.</p><p><p><strong>ألوان السدو</strong></p><p><p>من جانبه قال محمد محمد أحد البائعين بمحل لبيع وتفصيل السدو، ان هناك ثلاثة ألوان رئيسية للسدو، سواء كان جاهزًا أم مفصلًا، وهي اللون الأحمر والعنابي والبيج، ويعتبر اللون الأحمر أكثر الألوان المفضلة لدى الزبائن، حيث ان الإقبال على شرائه يطغى على غيره من الألوان المختلفة، واضاف أن الألوان بجانب المقاس وجودة القماش والنقشات المنسوجة على السدو ومواصفاته، تتحكم بشكل كبير في سعره، خاصة في ما يخص التفصيل، مؤكدا أن الإقبال على شراء السدو واسع، ويزداد شيئاً فشيئاً مع دخول فصل الشتاء، حيث يفضل العديد من الزبائن، استبدال السدو القديم بآخر جديد، وأوضح أن طقم السدو يأتي بمرتبتين وأربع وسادات ومسندين، والبعض يشتري أكثر من طقم للمجالس الكبيرة.</p></p>
+
+				<div class="share-btns">
+					<a href="whatsapp://send?text=جلسات السدو.. تحتل صدور المجالس بلا منازع http://www.al-sharq.com/news/details/456897" class="wa_icn hide-from-lg">
+						<i>
+							<svg viewBox="0 0 20 20">
+								<use xlink:href="#whats-app"></use>
+							</svg>
+						</i>
+					</a>
+					<a href="https://plus.google.com/share?url=http://www.al-sharq.com/news/details/456897" target="popup" onclick=" window.open(this.href, 'name' , 'width=600,height=400' ); return false; " class="gp_icn">
+						<i>
+							<svg viewBox="0 0 20 20">
+								<use xlink:href="#google-plus"></use>
+							</svg>
+						</i>
+					</a>
+					<a href="https://twitter.com/share?url=http://www.al-sharq.com/news/details/456897&via=alsharq_portal&text=جلسات السدو.. تحتل صدور المجالس بلا منازع" target="popup" onclick=" window.open(this.href, 'name' , 'width=600,height=400' ); return false; " class="tw_icn">
+						<i>
+							<svg viewBox="0 0 20 20">
+								<use xlink:href="#twitter"></use>
+							</svg>
+						</i>
+					</a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.al-sharq.com/news/details/456897&title=جلسات السدو.. تحتل صدور المجالس بلا منازع" target="popup" onclick=" window.open(this.href, 'name' , 'width=600,height=400' ); return false; " class="fb_icn">
+						<i>
+							<svg viewBox="0 0 20 20">
+								<use xlink:href="#facebook"></use>
+							</svg>
+						</i>
+					</a>
+				</div>
+			</artical>
+
+
+
+
+
+<script type="text/javascript">
+    $(function () {
+        $("a.show_reply").click(function () {
+            $(this).closest("div").next("div.inline_reply").slideToggle(200);
+        });
+    });
+    //Add Comment
+    function isValidEmailAddress(emailAddress) {
+        var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+        return pattern.test(emailAddress);
+    }
+
+    function addCommentByAjax(element, ParenttypeIDVal, ParentItemIDVal, CommentParentID) {
+        var currentForm = $(element).closest("form");
+        var userID = $(".body_wrap").find("#userID").val();
+        var userName = currentForm.find("#txtUserName").val();
+        var userEmail = currentForm.find("#txtUserEmail").val();
+        var userCommentTitle = currentForm.find("#txtCommentTitle").val();
+        var userCommentBody = currentForm.find("#txtCommentBody").val();
+        if (!$.trim(userName)) {
+            currentForm.find("#txtUserNameMessage").text("من فضلك ادخل الاسم");
+            currentForm.find("#txtUserNameMessage").show();
+            return false;
+        }
+        else {
+            currentForm.find("p#txtUserNameMessage").hide();
+        }
+
+        if (!$.trim(userEmail)) {
+            currentForm.find("#txtUserEmailMessage").text("من فضلك ادخل الايميل");
+            currentForm.find("#txtUserEmailMessage").show();
+            return false;
+        }
+        else {
+            if (isValidEmailAddress(userEmail) == false) {
+                currentForm.find("#txtUserEmailMessage").text("من فضلك ادخل ايميل صحيح");
+                currentForm.find("#txtUserEmailMessage").show();
+                return false;
+            }
+            else {
+                currentForm.find("p#txtUserEmailMessage").hide();
+            }
+        }
+
+        if (!$.trim(userCommentTitle)) {
+            currentForm.find("#txtCommentTitleMessage").text("من فضلك ادخل العنوان");
+            currentForm.find("#txtCommentTitleMessage").show();
+            return false;
+        }
+        else {
+            currentForm.find("p#txtCommentTitleMessage").hide();
+        }
+
+        if (!$.trim(userCommentBody)) {
+            currentForm.find("#txtCommentBodyMessage").text("من فضلك ادخل التعليق");
+            currentForm.find("#txtCommentBodyMessage").show();
+            return false;
+        }
+        else {
+            currentForm.find("p#txtCommentBodyMessage").hide();
+        }
+
+        var token = $('[name=__RequestVerificationToken]').val();
+        var headers = {};
+        headers["__RequestVerificationToken"] = token;
+        var url = "/comment/addcomment";
+        $.ajax({
+            type: 'POST',
+            url: url,
+            cache: false,
+            headers: headers,
+            data: {
+                itemID: ParentItemIDVal, itemType: ParenttypeIDVal, userName: userName, userEmail: userEmail
+                , commentTitle: userCommentTitle, commentBody: userCommentBody, commentParentID: CommentParentID, userID: userID
+            },
+            success:
+                function (data) {
+                    currentForm.find("#txtUserName").val('');
+                    currentForm.find("#txtUserEmail").val('');
+                    currentForm.find("#txtCommentTitle").val('');
+                    currentForm.find("#txtCommentBody").val('');
+                    alert("تم ارسال تعليقك بنجاح شكراً لك!");
+                },
+            error: function (error) {
+                alert("!!");
+                }
+        });
+    }
+
+
+    //End of Add Comment
+</script>
+
+
+<div class="news_comments" id="news_comments">
+    <h3 class="tit_2"><a href="#insert_comments">التعليقات<span class="comments_no"></span><span class="add_comment"></span></a></h3>
+
+    <div class="g-u">
+        <h4 class="w-title">تعليقات</h4>
+            <ul class="user-comnts">
+                <li>لا يوجد تعليقات</li>
+            </ul>
+    </div>
+
+
+</div>
+
+<div class="insert_comments" id="insert_comments">
+    <!-- (int itemID, int itemType, string userName, string userEmail,
+    string commentTitle, string commentBody, int commentParentID, string userID) -->
+
+<form action="/news/details/456897" method="post"><input name="__RequestVerificationToken" type="hidden" value="DQsWucvfR7Pz9coLTkIj0_2tRdwL2wYTUdWKRFn2Ikzx8a1leJXaJ70v4aBH1_ZFWC4QTEHa0QUoDt-RJofZbbb9ri3Rl_O0wJWby98KyCE1" /><input id="userID" name="userID" type="hidden" value="" />    <div class="g-u">
+        <h4 class="w-title">أضف تعليق</h4>
+        <div class="add-comnt">
+            <div class="form-u">
+                    <input type="text" value="" name="txtUserName" id="txtUserName" placeholder="الإسم*">
+                    <p id="txtUserNameMessage" class="alert" style="display:none;"></p>
+                                    <input type="email" value="" name="txtUserEmail" id="txtUserEmail" placeholder="البريد الإلكتروني*">
+                    <p id="txtUserEmailMessage" class="alert" style="display:none;"></p>
+                <input type="text" value="" name="txtCommentTitle" id="txtCommentTitle" placeholder="عنوان التعليق*">
+                <p id="txtCommentTitleMessage" class="alert" style="display:none;"></p>
+                <textarea name="txtCommentBody" id="txtCommentBody" cols="" rows="" placeholder="نص التعليق*" data-gramm="" data-txt_gramm_id="c1d53f31-ff2a-34a5-48b0-e14eeeb5fc26"></textarea>
+                <p id="txtCommentBodyMessage" class="alert" style="display:none;"></p>
+                <div class="btn-cntr-u">
+                    <input type="button" onclick="return addCommentByAjax(this, 1, 456897, 0)" value="إرسل التعليق">
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+
+		</section>
+		<aside id="inrpg_l" class="c-xs-12 c-md-4 c-lg-3">
+			<div class="mr">
+<div>
+    <!-- Beginning Sync AdSlot 2 for Ad unit alsharq.com-new/News_listing_page/News_details_page ### size: [[300,250]] -->
+        <div id='div-gpt-ad-119426690562134383-2'>
+            <script type='text/javascript'>
+                googletag.display('div-gpt-ad-119426690562134383-2');
+            </script>
+        </div>
+    <!-- End AdSlot 2 -->
+
+</div>
+			</div>
+    
+    <div class="nl-s1 fix-h-340">
+        <a href="/section/148" class="label">
+            <span>إختيارات المحررين</span>
+            <i class="to-left">
+                <svg>
+                    <use xlink:href="#left-arrow"></use>
+                </svg>
+            </i>
+        </a>
+        <ul>
+            
+                <li> <a href="/news/details/462740">وظائف شاغرة للمعلمين في المدارس.. تعرّف على الشروط </a></li>
+                <li> <a href="/news/details/462647">د. خالد الدخيل لـ &quot;الشرق&quot;: &quot;جاستا&quot; يضر بمصالح أمريكا وعلاقاتنا معها لن تتأثر بمجيء ترامب </a></li>
+                <li> <a href="/news/details/462658">قوات الأسد &quot;تنهب&quot; حلب بعد &quot;تهجير&quot; سكانها </a></li>
+                <li> <a href="/news/details/462592">الأمن المصري يضبط ثروة ضخمة في منزل موظف &quot;مرتشي&quot; </a></li>
+                <li> <a href="/news/details/462477">الشورى: ضوابط مشددة لتنظيم التعامل في السلع المدعومة  </a></li>
+        </ul>
+    </div>
+			
+<div class="g-u">
+	<h4 class="w-title">
+		الأكثر مشاهدة
+	</h4>
+    <div class="row">
+            <div class="c-xs-12 c-sm-4 c-md-12 c-lg-12 ">
+                <artical class="ni-s3">
+                    <a href="/news/details/462740">
+                        <figure>
+                            <img src="http://media.al-sharq.com/PortalImages/News/Medium/282960_0.jpg" alt="وظائف شاغرة للمعلمين في المدارس.. تعرّف على الشروط" />
+                        </figure>
+                    </a>
+                    <header>
+                        <span href="/news/details/462740" class="label">
+                            <i class="">
+                                <svg viewBox="0 0 20 15">
+                                    <use xlink:href="#views-1"></use>
+                                </svg>
+                            </i>
+                            <span>6725</span>
+                        </span>
+                        <h3>
+                            <a href="/news/details/462740">
+                                وظائف شاغرة للمعلمين في المدارس.. تعرّف على الشروط
+                            </a>
+                        </h3>
+                    </header>
+                    
+<i class="social">
+	<svg class="" viewBox="0 0 100 100">
+		<use xlink:href="#social"></use>
+	</svg>
+</i>
+<i class="action"></i>
+<div class="share">
+	<span class="close"> X </span>
+	<div class="social-u">
+		<ul>
+            <li class="hide-from-lg">
+                <a href="whatsapp://send?text=وظائف شاغرة للمعلمين في المدارس.. تعرّف على الشروط http://www.al-sharq.com/news/details/462740" class="wa_icn hide-from-lg">
+                    <i>
+                        <svg viewBox="0 0 20 20">
+                            <use xlink:href="#whats-app"></use>
+                        </svg>
+                    </i>
+                </a>
+            </li>  
+			<li>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.al-sharq.com/news/details/462740&title=وظائف شاغرة للمعلمين في المدارس.. تعرّف على الشروط" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="Facebook">
+					<i>
+						<svg class="fb_icn" viewBox="0 0 20 20">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/share?url=http://www.al-sharq.com/news/details/462740&via=alsharq_portal&text=وظائف شاغرة للمعلمين في المدارس.. تعرّف على الشروط" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="Twitter">
+					<i>
+						<svg class="tw_icn" viewBox="0 0 20 20">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/share?url=http://www.al-sharq.com/news/details/462740" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="google plus">
+					<i>
+						<svg class="gp_icn" viewBox="0 0 20 20">
+							<use xlink:href="#google-plus"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+                </artical>
+            </div>
+            <div class="c-xs-12 c-sm-4 c-md-12 c-lg-12 ">
+                <artical class="ni-s3">
+                    <a href="/news/details/462400">
+                        <figure>
+                            <img src="http://media.al-sharq.com/PortalImages/News/Medium/282760_0.jpg" alt="تفعيل خدمة البوابة الإلكترونية للمقيمين بمطار حمد الدولي" />
+                        </figure>
+                    </a>
+                    <header>
+                        <span href="/news/details/462400" class="label">
+                            <i class="">
+                                <svg viewBox="0 0 20 15">
+                                    <use xlink:href="#views-1"></use>
+                                </svg>
+                            </i>
+                            <span>6382</span>
+                        </span>
+                        <h3>
+                            <a href="/news/details/462400">
+                                تفعيل خدمة البوابة الإلكترونية للمقيمين بمطار حمد الدولي
+                            </a>
+                        </h3>
+                    </header>
+                    
+<i class="social">
+	<svg class="" viewBox="0 0 100 100">
+		<use xlink:href="#social"></use>
+	</svg>
+</i>
+<i class="action"></i>
+<div class="share">
+	<span class="close"> X </span>
+	<div class="social-u">
+		<ul>
+            <li class="hide-from-lg">
+                <a href="whatsapp://send?text=تفعيل خدمة البوابة الإلكترونية للمقيمين بمطار حمد الدولي http://www.al-sharq.com/news/details/462400" class="wa_icn hide-from-lg">
+                    <i>
+                        <svg viewBox="0 0 20 20">
+                            <use xlink:href="#whats-app"></use>
+                        </svg>
+                    </i>
+                </a>
+            </li>  
+			<li>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.al-sharq.com/news/details/462400&title=تفعيل خدمة البوابة الإلكترونية للمقيمين بمطار حمد الدولي" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="Facebook">
+					<i>
+						<svg class="fb_icn" viewBox="0 0 20 20">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/share?url=http://www.al-sharq.com/news/details/462400&via=alsharq_portal&text=تفعيل خدمة البوابة الإلكترونية للمقيمين بمطار حمد الدولي" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="Twitter">
+					<i>
+						<svg class="tw_icn" viewBox="0 0 20 20">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/share?url=http://www.al-sharq.com/news/details/462400" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="google plus">
+					<i>
+						<svg class="gp_icn" viewBox="0 0 20 20">
+							<use xlink:href="#google-plus"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+                </artical>
+            </div>
+            <div class="c-xs-12 c-sm-4 c-md-12 c-lg-12 ">
+                <artical class="ni-s3">
+                    <a href="/news/details/462299">
+                        <figure>
+                            <img src="http://media.al-sharq.com/PortalImages/News/Medium/128915_0.jpg" alt="قانون الوافدين ينظم علاقات سوق العمل" />
+                        </figure>
+                    </a>
+                    <header>
+                        <span href="/news/details/462299" class="label">
+                            <i class="">
+                                <svg viewBox="0 0 20 15">
+                                    <use xlink:href="#views-1"></use>
+                                </svg>
+                            </i>
+                            <span>3106</span>
+                        </span>
+                        <h3>
+                            <a href="/news/details/462299">
+                                قانون الوافدين ينظم علاقات سوق العمل
+                            </a>
+                        </h3>
+                    </header>
+                    
+<i class="social">
+	<svg class="" viewBox="0 0 100 100">
+		<use xlink:href="#social"></use>
+	</svg>
+</i>
+<i class="action"></i>
+<div class="share">
+	<span class="close"> X </span>
+	<div class="social-u">
+		<ul>
+            <li class="hide-from-lg">
+                <a href="whatsapp://send?text=قانون الوافدين ينظم علاقات سوق العمل http://www.al-sharq.com/news/details/462299" class="wa_icn hide-from-lg">
+                    <i>
+                        <svg viewBox="0 0 20 20">
+                            <use xlink:href="#whats-app"></use>
+                        </svg>
+                    </i>
+                </a>
+            </li>  
+			<li>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.al-sharq.com/news/details/462299&title=قانون الوافدين ينظم علاقات سوق العمل" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="Facebook">
+					<i>
+						<svg class="fb_icn" viewBox="0 0 20 20">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/share?url=http://www.al-sharq.com/news/details/462299&via=alsharq_portal&text=قانون الوافدين ينظم علاقات سوق العمل" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="Twitter">
+					<i>
+						<svg class="tw_icn" viewBox="0 0 20 20">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/share?url=http://www.al-sharq.com/news/details/462299" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="google plus">
+					<i>
+						<svg class="gp_icn" viewBox="0 0 20 20">
+							<use xlink:href="#google-plus"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+                </artical>
+            </div>
+            <div class="c-xs-12 c-sm-4 c-md-12 c-lg-12 ">
+                <artical class="ni-s3">
+                    <a href="/news/details/462439">
+                        <figure>
+                            <img src="http://media.al-sharq.com/PortalImages/News/Medium/171647_0.jpg" alt="نصف مليون ريال غرامة مخالفة بيع السلع المدعومة والأعلاف" />
+                        </figure>
+                    </a>
+                    <header>
+                        <span href="/news/details/462439" class="label">
+                            <i class="">
+                                <svg viewBox="0 0 20 15">
+                                    <use xlink:href="#views-1"></use>
+                                </svg>
+                            </i>
+                            <span>1472</span>
+                        </span>
+                        <h3>
+                            <a href="/news/details/462439">
+                                نصف مليون ريال غرامة مخالفة بيع السلع المدعومة والأعلاف
+                            </a>
+                        </h3>
+                    </header>
+                    
+<i class="social">
+	<svg class="" viewBox="0 0 100 100">
+		<use xlink:href="#social"></use>
+	</svg>
+</i>
+<i class="action"></i>
+<div class="share">
+	<span class="close"> X </span>
+	<div class="social-u">
+		<ul>
+            <li class="hide-from-lg">
+                <a href="whatsapp://send?text=نصف مليون ريال غرامة مخالفة بيع السلع المدعومة والأعلاف http://www.al-sharq.com/news/details/462439" class="wa_icn hide-from-lg">
+                    <i>
+                        <svg viewBox="0 0 20 20">
+                            <use xlink:href="#whats-app"></use>
+                        </svg>
+                    </i>
+                </a>
+            </li>  
+			<li>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.al-sharq.com/news/details/462439&title=نصف مليون ريال غرامة مخالفة بيع السلع المدعومة والأعلاف" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="Facebook">
+					<i>
+						<svg class="fb_icn" viewBox="0 0 20 20">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/share?url=http://www.al-sharq.com/news/details/462439&via=alsharq_portal&text=نصف مليون ريال غرامة مخالفة بيع السلع المدعومة والأعلاف" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="Twitter">
+					<i>
+						<svg class="tw_icn" viewBox="0 0 20 20">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/share?url=http://www.al-sharq.com/news/details/462439" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="google plus">
+					<i>
+						<svg class="gp_icn" viewBox="0 0 20 20">
+							<use xlink:href="#google-plus"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+                </artical>
+            </div>
+            <div class="c-xs-12 c-sm-4 c-md-12 c-lg-12 ">
+                <artical class="ni-s3">
+                    <a href="/news/details/462592">
+                        <figure>
+                            <img src="http://media.al-sharq.com/PortalImages/News/Medium/282871_0.jpg" alt="الأمن المصري يضبط ثروة ضخمة في منزل موظف &quot;مرتشي&quot;" />
+                        </figure>
+                    </a>
+                    <header>
+                        <span href="/news/details/462592" class="label">
+                            <i class="">
+                                <svg viewBox="0 0 20 15">
+                                    <use xlink:href="#views-1"></use>
+                                </svg>
+                            </i>
+                            <span>1453</span>
+                        </span>
+                        <h3>
+                            <a href="/news/details/462592">
+                                الأمن المصري يضبط ثروة ضخمة في منزل موظف &quot;مرتشي&quot;
+                            </a>
+                        </h3>
+                    </header>
+                    
+<i class="social">
+	<svg class="" viewBox="0 0 100 100">
+		<use xlink:href="#social"></use>
+	</svg>
+</i>
+<i class="action"></i>
+<div class="share">
+	<span class="close"> X </span>
+	<div class="social-u">
+		<ul>
+            <li class="hide-from-lg">
+                <a href="whatsapp://send?text=الأمن المصري يضبط ثروة ضخمة في منزل موظف &quot;مرتشي&quot; http://www.al-sharq.com/news/details/462592" class="wa_icn hide-from-lg">
+                    <i>
+                        <svg viewBox="0 0 20 20">
+                            <use xlink:href="#whats-app"></use>
+                        </svg>
+                    </i>
+                </a>
+            </li>  
+			<li>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.al-sharq.com/news/details/462592&title=الأمن المصري يضبط ثروة ضخمة في منزل موظف &quot;مرتشي&quot;" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="Facebook">
+					<i>
+						<svg class="fb_icn" viewBox="0 0 20 20">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/share?url=http://www.al-sharq.com/news/details/462592&via=alsharq_portal&text=الأمن المصري يضبط ثروة ضخمة في منزل موظف &quot;مرتشي&quot;" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="Twitter">
+					<i>
+						<svg class="tw_icn" viewBox="0 0 20 20">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/share?url=http://www.al-sharq.com/news/details/462592" target="popup" onclick="window.open(this.href, 'name', 'width=600,height=400'); return false;" title="google plus">
+					<i>
+						<svg class="gp_icn" viewBox="0 0 20 20">
+							<use xlink:href="#google-plus"></use>
+						</svg>
+					</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+                </artical>
+            </div>
+    </div>
+</div>
+
+    <div class="c-xs-12 c-sm-6 c-md-12 c-lg-12 pbblk">
+	<ul class="rslides" id="slider4">
+			<li>
+				<a href="http://www.al-sharq.com/news/list/496" target="_blank">
+					<img src='http://media.al-sharq.com/PortalImages/Banners/1.gif' alt="الصوره الأولى" title="الصوره الأولى" />
+				</a>
+			</li>
+			<li>
+				<a href="http://www.al-sharq.com/section/112" target="_blank">
+					<img src='http://media.al-sharq.com/PortalImages/Banners/2.gif' alt="الصوره الثانية" title="الصوره الثانية" />
+				</a>
+			</li>
+			<li>
+				<a href="http://al-sharq.com/editor/list" target="_blank">
+					<img src='http://media.al-sharq.com/PortalImages/Banners/3.gif' alt="الصوره الثالثة" title="الصوره الثالثة" />
+				</a>
+			</li>
+	</ul>
+
+</div>
+
+			<div class="mr">
+<div>
+    <!-- alsharq.com-new/300x250-ros -->
+        <div id='div-gpt-ad-1418902681790-0'  >
+            <script type='text/javascript'>
+                googletag.display('div-gpt-ad-1418902681790-0');
+            </script>
+        </div>
+
+</div>
+			</div>
+<div class="n-letter">
+	<p>إشترك في نشرة البوابة اليومية لتصلك عبر الإيميل</p>
+	<form onsubmit="return subscribeNewsLetter(this) && false">
+		<input type="email" name="" placeholder="البريد الإلكتروني">
+		<button class="" type="submit">
+			<i class="to-left">
+				<svg>
+					<use xlink:href="#left-arrow"></use>
+				</svg>
+			</i>
+		</button>
+	</form>
+	<script type="text/javascript">
+		function subscribeNewsLetter(form) {
+			var email = $(form).find('input').val();
+			if (!email)
+				return;
+			$.post('/home/newsletter', { email }, function() {
+				return false;
+			});
+			$(form).find('input').val('');
+			return false;
+		}
+	</script>
+</div>
+
+		</aside>
+	</div>
+</main>
+
+	<div class="notify-u slideInUp" style="display: none">
+		<div class="u">
+			<span class="ns-type"> عاجل</span>
+			<span class="close"> X  </span>
+		</div>
+	</div>
+<footer>
+    <div class="u">
+        <div class="row">
+            <div class="c-xs-12 c-sm-12 c-md-4 c-lg-4 ">
+                <ul>
+                    <li><a href="/HTML/contactus/">اتصل بنا</a></li>
+                    <li><a href="/HTML/contactus/">اعلن معنا</a></li>
+                    <li><a href="/HTML/EditingStuff/">هيئة التحرير</a></li>
+                    <li><a href="/HTML/privatepolicy/">بيان الخصوصية</a></li>
+                    <li><a href="/HTML/TermsOfUse/">شروط الاستخدام</a></li>
+                </ul>
+            </div>
+            <div class="c-xs-12 c-sm-12 c-md-8 c-lg-8 ">
+                <p>
+                    جميع الحقوق محفوظة © 2016
+
+                    <a href="http://www.al-sharq.com/">Al-Sharq</a> الموقع تم تطويره بواسطة
+                    <a class="sarmady" target="_blank" href="http://sarmady.net/">
+                        <i class="sarmady">
+                            <svg class="" viewBox="0 0 100 100">
+                                <use xlink:href="#sarmady"></use>
+                            </svg>
+                        </i>
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</footer>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var activeLink = $('a[href="' + location.pathname + '"]');
+        var activeParent = activeLink.parents('li');
+        activeParent.addClass('active');
+    });
+</script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+			function () {
+			    (b[l].q = b[l].q || []).push(arguments)
+			});
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r);
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-33155333-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<code>
+    clicking on ".header .search" adds class "open" on "#search-overlay"
+    clicking on ".close" removes class "open" on "#search-overlay"
+    <!--clicking on ".header .social" adds class "open" on "#social-overlay"
+    clicking on ".close" removes class "open" on "#social-overlay"-->
+    clicking on ".action" removes class "open" on ".action.open"
+    clicking on ".action" adds class ".open" on "target"
+    clicking on ".close" removes class ".open" on ".action"
+    <!-- start by removing the previous "open" class -->
+    clicking on ".has-dd > a " removes class ".expand" on "a.expand"
+    <!-- then add it to the clicked title -->
+    clicking on ".has-dd > a " adds class ".expand" on "target"
+</code>
+<script type="text/javascript">
+    // Ajaxing svg sprite to be cashed
+    $(document).ready(function () {
+
+        // Ajaxing svg sprite to be cashed
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "/assets/img/sprite.svg", true);
+        ajax.send();
+        ajax.onload = function (e) {
+            var div = document.createElement("div");
+            div.style.display = "none";
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
+        };
+    });
+</script>
+<script type="text/javascript">
+    // banner slider
+    $(document).ready(function () {
+        $("#slider4").responsiveSlides({
+            auto: true,
+            pager: false,
+            nav: false,
+            speed: 500,
+            timeout: 30000,
+            namespace: "banner",
+            before: function () {
+                $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+                $('.events').append("<li>after event fired.</li>");
+            }
+        });
+    });
+</script>
+<!--
+        Start adding Date picker component
+    -->
+<script src="/assets/lib/picker.js"></script>
+<script src="/assets/lib/picker.date.js"></script>
+<script src="/assets/lib/legacy.js"></script>
+<!-- Add the language *after* the pickadate script files -->
+<script src="/assets/lib/translations/ar.js"></script>
+<script type="text/javascript">
+    var day;
+    var month;
+    var year;
+    var picker;
+    function getDateFormatted(date) {
+        var dd = date.getDate();
+        var mm = date.getMonth() + 1; //January is 0!
+        var yyyy = date.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+        var dateString = dd + '/' + mm + '/' + yyyy;
+        return dateString;
+    }
+    function getArabicMonth(data) {
+        if (data == 1) {
+            return 'يناير';
+        }
+        else if (data == 2) {
+            return 'فبراير';
+        }
+        else if (data == 3) {
+            return 'مارس';
+        }
+        else if (data == 4) {
+            return 'أبريل';
+        }
+        else if (data == 5) {
+            return 'مايو';
+        }
+        else if (data == 6) {
+            return 'يونيو';
+        }
+        else if (data == 7) {
+            return 'يوليو';
+        }
+        else if (data == 8) {
+            return 'أغسطس';
+        }
+        else if (data == 9) {
+            return 'سبتمبر';
+        }
+        else if (data == 10) {
+            return 'نوفمبر';
+        }
+        else if (data == 11) {
+            return 'نوفمبر';
+        }
+        else if (data == 12) {
+            return 'ديسمبر';
+        }
+    }
+    date = new Date();
+    var month = getArabicMonth(date.getMonth() + 1);
+
+    $('#inputPDFDownload').val(date.getDate() + ' ' + month + ' ' + date.getFullYear());
+    var $input = $('.datepicker').pickadate({
+        selectYears: true,
+        selectMonths: true,
+        close: 'بحث',
+        formatSubmit: 'yyyy/mm/dd',
+        // min: [2015, 7, 14],
+        container: '#container',
+        // editable: true,
+        closeOnSelect: true,
+        closeOnClear: false,
+        onClose: function () {
+            date = $input.pickadate('picker').component.item.highlight.obj.toDateString();
+
+            $.ajax
+			({
+			    type: "POST",
+			    //the url where you want to sent the userName and password to
+			    url: '/HTML/DownloadNewsLetters',
+			    //contentType: 'application/json',
+			    //dataType: 'json',
+			    async: false,
+			    //json object to sent to the authentication url
+			    data: { "date": date, "isAjax": true },
+			    success: function (data) {
+			        var page = $(data);
+			        $('#mainArticle').replaceWith(page.find('#mainArticle'));
+			        activeShareBtns();
+			    }
+			});
+        }
+    });
+</script>
+<script type="text/javascript">
+    function getDateFormatted(date) {
+        var dd = date.getDate();
+        var mm = date.getMonth() + 1; //January is 0!
+        var yyyy = date.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+        var dateString = dd + '/' + mm + '/' + yyyy;
+        return dateString;
+    }
+
+    function getArchiveQueryString(pageNumber) {
+        var queryString = "page=" + pageNumber;
+        for (var i = 0; i < fields.length; i++) {
+            var fieldName = fields[i];
+            var fieldValue = document.getElementById(fieldName).value;
+            queryString += '&' + fieldName + '=' + fieldValue;
+        }
+        return queryString;
+    }
+
+    function getArchiveUrl() {
+        var queryString = getArchiveQueryString(1);
+        var url = window.location.href;
+        var index = url.indexOf('&page=');
+
+        if (index > -1) {
+            url = url.substring(0, index);
+        }
+        url += url.indexOf('?') ? '&' : '?';
+        url += queryString;
+        return url;
+    };
+
+    function initArchiveFromDatePicker() {
+        var picker;
+        var todayTimeStamp = +new Date; // Unix timestamp in milliseconds
+        var oneDayTimeStamp = 1000 * 60 * 60 * 24; // Milliseconds in a day
+        var diff = todayTimeStamp - oneDayTimeStamp;
+        var yesterdayDate = new Date(diff);
+        var yesterdayString = yesterdayDate.getFullYear() + '-' + (yesterdayDate.getMonth() + 1) + '-' + yesterdayDate.getDate();
+        var day = yesterdayDate.getDate();
+        if (day < 10)
+            day = "0" + day;
+        var month = (yesterdayDate.getMonth() + 1);
+        if (month < 10)
+            month = "0" + month;
+        var year = yesterdayDate.getFullYear();
+        var arFromDateElement = document.getElementById("arFromDate");
+        if (!arFromDateElement)
+            return;
+        arFromDateElement.value = day + "/" + month + "/" + year;
+        //
+        var $input = $('#arFromDate').pickadate({
+            selectYears: true,
+            selectMonths: true,
+            close: '',
+            formatSubmit: 'yyyy/mm/dd',
+            // min: [2015, 7, 14],
+            container: '#container',
+            onClose: function () {
+                var $fromDateElement = $('#arFromDate');
+                var $toDateElement = $('#arToDate');
+                var fromDate = $fromDateElement.pickadate('picker').component.item.highlight.obj;
+                var toDate = $toDateElement.pickadate('picker').component.item.highlight.obj;
+                
+                var fromDateFormatted = getDateFormatted(fromDate);
+                var toDateFormatted = getDateFormatted(toDate);
+                $fromDateElement.val(fromDateFormatted);
+                // check if date bigger than today
+                var $today = new Date();
+                var toDayFormatted = getDateFormatted($today);
+                if (fromDate > $today) {
+                    alert("تاريخ البداية يجب أن يكون أقل من تاريخ النهاية !");
+                } else if (fromDateFormatted > toDayFormatted) {
+                    alert("من فضلك تأكد من صحة التاريخ (تايخ البداية يجب أن يكون أقل من تاريخ اليوم !");
+                } else {
+                    $.ajax
+			({
+			    type: "POST",
+			    //the url where you want to sent the userName and password to
+			    url: '/News/Archive',
+			    //contentType: 'application/json',
+			    //dataType: 'json',
+			    async: false,
+			    //json object to sent to the authentication url
+			    data: { "arFromDate": fromDateFormatted, "arToDate": toDateFormatted, "page": 1, "isAjax": true },
+			    success: function (data) {
+			        var page = $(data);
+			        $('#main').replaceWith(page.find('#main'));
+			        activeShareBtns();
+			    }
+			});
+                }
+                //var url = getArchiveUrl();
+                //window.location.href = url;
+            }
+        });
+    }
+
+    initArchiveFromDatePicker();
+
+    function initArchiveToDatePicker() {
+        var today = new Date();
+        document.getElementById("arToDate").value = getDateFormatted(today);
+        var $input = $('#arToDate').pickadate({
+            selectYears: true,
+            selectMonths: true,
+            close: '',
+            formatSubmit: 'yyyy/mm/dd',
+            // min: [2015, 7, 14],
+            container: '#container',
+            // editable: true,
+            onClose: function () {
+                var $fromDateElement = $('#arFromDate');
+                var $toDateElement = $('#arToDate');
+                var fromDate = $fromDateElement.pickadate('picker').component.item.highlight.obj;
+                var toDate = $toDateElement.pickadate('picker').component.item.highlight.obj;
+                
+                var toDateFormatted = getDateFormatted(toDate);
+                var fromDateFormatted = getDateFormatted(fromDate);
+                $toDateElement.val(toDateFormatted);
+                // check if date bigger than today
+                var $today = new Date();
+                var toDayFormatted = getDateFormatted($today);
+
+                if (fromDate > $today) {
+                    alert("تاريخ البداية يجب أن يكون أقل من تاريخ النهاية !");
+                } else if (fromDateFormatted > toDayFormatted) {
+                    alert("من فضلك تأكد من صحة التاريخ (تايخ البداية يجب أن يكون أقل من تاريخ اليوم !");
+                }else {
+                    $.ajax
+          ({
+              type: "POST",
+              url: '/News/Archive',
+              //contentType: 'application/json',
+              //dataType: 'json',
+              async: false,
+              //json object to sent to the authentication url
+              data: { "arFromDate": fromDateFormatted, "arToDate": toDateFormatted, "page": 1, "isAjax": true },
+              success: function (data) {
+                  var page = $(data);
+                  $('#main').replaceWith(page.find('#main'));
+                  activeShareBtns();
+              }
+          });
+                }
+            }
+        });
+
+    }
+
+    initArchiveToDatePicker();
+
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+			results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    //set inputs date for first time
+    $(document).ready(function () {
+        var fromDate = getParameterByName('arFromDate');
+        var toDate = getParameterByName('arToDate');
+        if (fromDate == null) {
+            var $today = new Date();
+            //var $yesterday = new Date($today);
+            //$yesterday.setDate($today.getDate() - 1);
+            //var yesterday = $yesterday.getDate();
+            //if (yesterday < 10) {
+            //    yesterday = "0" + yesterday;
+            //}
+            //var ymonth = fullDate.getMonth() + 1;
+            //if (ymonth < 10) {
+            //    ymonth = "0" + ymonth;
+            //}
+            //var yyear = fullDate.getFullYear();
+            //yester day if you want to set from date for yesterday date
+            //$("#arFromDate").val(yesterday + "/" + ymonth + "/" + yyear);
+
+            var fullDate = new Date();
+            var day = fullDate.getDate();
+            if (day < 10) {
+                day = "0" + day;
+            }
+            var month = fullDate.getMonth() + 1;
+            if (month < 10) {
+                month = "0" + month;
+            }
+            var year = fullDate.getFullYear();
+            $("#arToDate").val(day + "/" + month + "/" + year);
+            $("#arFromDate").val(day + "/" + month + "/" + year);
+        } else {
+            $("#arFromDate").val(fromDate);
+            $("#arToDate").val(toDate);
+        }
+    });
+</script>
+<!-- Finishing adding Date picker component -->
+<!-- Start Notifications-->
+<script>
+	$('.notify-u > .u .close').click(function () {
+		$("div.slideInUp").hide();
+	});
+
+	var w;
+	if (typeof (Worker) !== "undefined") {
+		if (typeof (w) == "undefined") {
+			w = new Worker("/scripts/notifications-workers.js");
+		}
+		w.onmessage = function (event) {
+			if (event.data != "" && event.data != null) {
+				$("div.slideInUp").hide();
+				var obj = jQuery.parseJSON(event.data);
+				if (obj.L !== "" && !obj.L.match(/^[a-zA-Z]+:\/\//)) {
+					obj.L = 'http://' + obj.L;
+				}
+				if (obj.L == "") {
+					$("div.notify-u.slideInUp")
+						.html("<div class='notify-u slideInUp'><div class='u'><span class='ns-type'> عاجل</span><a target='_blank' onclick='NotificationClosed(this)'>"
+							+ obj.TI + "</a><span class='close'> X  </span></div>");
+				}
+				else {
+					$("div.notify-u.slideInUp")
+						.html("<div class='u'><span class='ns-type'> عاجل</span><a href='"
+							+ obj.L
+							+ "' target='_blank' onclick='NotificationClosed(this)'>"
+							+ obj.TI
+							+ "</a><span class='close'> X  </span></div>");
+				}
+				$("div.notify-u.slideInUp").show();
+			}
+			else {
+				$("div.slideInUp").hide();
+			}
+		}
+	}
+</script>
+<!-- End Notifications-->
+<!-- BEGIN EFFECTIVE MEASURE CODE -->
+<!-- COPYRIGHT EFFECTIVE MEASURE -->
+<script type="text/javascript">
+	(function() {
+		var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+		em.src = ('https:' == document.location.protocol ? 'https://me-ssl' : 'http://me-cdn') + '.effectivemeasure.net/em.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+	})();
+</script>
+<noscript>
+	<img src="https://me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;" />
+</noscript>
+<!--END EFFECTIVE MEASURE CODE -->
+
+	<script type="text/javascript">
+		var _sf_async_config = { uid: 52141, domain: 'al-sharq.com', useCanonical: true };
+		(function () {
+			function loadChartbeat() {
+				window._sf_endpt = (new Date()).getTime();
+				var e = document.createElement('script');
+				e.setAttribute('language', 'javascript');
+				e.setAttribute('type', 'text/javascript');
+				e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+				document.body.appendChild(e);
+			};
+
+			var oldonload = window.onload;
+			window.onload = (typeof window.onload != 'function') ?
+				loadChartbeat : function () {
+					oldonload();
+					loadChartbeat();
+				};
+		})();
+	</script>
+</body>
+</html>

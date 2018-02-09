@@ -1,0 +1,1 @@
+﻿MOTIF=\b[Ll]aines?\b|\b[Ll]esh(i|it)?\b|صوف
